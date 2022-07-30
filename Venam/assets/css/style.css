@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@media (max-width:768px) {
+    body{
+        margin-bottom: 60px;
+    }
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -312,38 +318,16 @@ select {
     color: #0465D2;
 }
 
-main {
-    height: 100vh;
-}
-
-#to-top-btn {
-    background-color: #F4BA05;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 11px;
-    border-radius: 5px;
-    position: fixed;
-    right: 40px;
-    bottom: 30px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-#to-top-btn:hover {
-    color: #0465D2;
-}
-
 footer .offer {
     background-image: url(https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/limited_offer_bg.jpg);
 }
 
 footer .offer .left {
-    width: 543px;
+    max-width: 543px;
 }
 
 footer .offer .right {
-    width: 443px;
+    max-width: 443px;
     height: 92px;
 }
 
@@ -421,7 +405,7 @@ footer .subscribe .button:hover{
 
 footer .subscribe .right {
     height: 50px;
-    width: 575px;
+    max-width: 575px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -448,4 +432,54 @@ footer .main-footer p{
     color: #656565;
     font-weight: 400;
     font-size: 14px;
+}
+
+footer .main-footer .left p{
+    line-height: 30px;
+}
+
+footer .footer-bottom{
+    background-color: #303030;
+}
+
+footer .footer-bottom .copyright{
+    color: #656565;
+}
+
+main {
+    height: 100vh;
+}
+
+#to-top-btn {
+    background-color: #F4BA05;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 11px;
+    border-radius: 5px;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#to-top-btn:hover {
+    color: #0465D2;
+}
+
+.mobile-navbar,
+.mobile-navbar a{
+    height: 60px;
+    color: #a2a2a2;
+}
+
+.mobile-navbar a,
+.mobile-navbar .search,
+.mobile-navbar .wishlist{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
