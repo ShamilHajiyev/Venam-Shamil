@@ -129,3 +129,12 @@ $(window).scroll(function () {
 toTop.addEventListener('click', function (e) {
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
+
+$('.slick-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    arrows: false,
+});
