@@ -138,3 +138,81 @@ $('.slick-slider').slick({
     cssEase: 'linear',
     arrows: false,
 });
+
+$('.deals-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+let categorySelection = document.querySelector('.category-selection');
+let categorySelectionItems = document.querySelectorAll('.category-selection-item');
+
+for (let category of categorySelectionItems) {
+    category.addEventListener('click',function () {
+        for (const removedCategory of categorySelectionItems) {
+            removedCategory.classList.remove('active-category-selection-item');
+        }
+        category.classList.add('active-category-selection-item');
+    })
+}
+
+$('.most-popular-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});

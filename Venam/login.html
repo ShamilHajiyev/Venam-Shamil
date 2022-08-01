@@ -13,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/searchbar.css">
+    <link rel="stylesheet" href="assets/css/login.css">
     <link rel="icon" href="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cropped-favicon-32x32.png"
         sizes="32x32">
 </head>
@@ -513,7 +514,68 @@
     </header>
 
     <main class="bg-light">
+        <div class="my-account-header d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="py-3">My account</h1>
+            <div class="category-selection bg-light d-flex justify-content-between py-3 px-5 my-3">
+                <div class="category-selection-item active-category-selection-item"><a href="index.html">Home </a></div>
+                <span> ⚫ </span>
+                <div class="category-selection-item category-selection-item-2"> My Account</div>
+            </div>
+        </div>
 
+        <div class="login py-5 my-5">
+            <div class="container-fluid container-lg">
+                <div class="row justify-content-center">
+                    <div class="col-5 px-5">
+                        <div class="form-header">
+                            <h1>Login</h1>
+                        </div>
+                        <form class="border py-3 px-3">
+                            <div class="form-group">
+                                <label for="username">USERNAME OR EMAIL ADDRESS <span>*</span></label>
+                                <input type="text" class="form-control" name="username" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">PASSWORD <span>*</span></label>
+                                <input type="password" class="form-control" name="password" id="password">
+                            </div>
+                            <div class="form-group row my-3">
+                                <div class="col-6">
+                                    <button type="submit" class="btn">LOG IN</button>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="remember">
+                                        <label class="form-check-label m-0 p-0" for="remember">
+                                            REMEMBER ME
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="">Lost your password?</a>
+                        </form>
+                    </div>
+                    <div class="col-5 px-5">
+                        <div class="form-header">
+                            <h1>Register</h1>
+                        </div>
+                        <form class="border py-3 px-3">
+                            <div class="form-group">
+                                <label for="username">EMAIL ADDRESS <span>*</span></label>
+                                <input type="text" class="form-control" name="username" id="username">
+                            </div>
+                            <p>
+                                A password will be sent to your email address.
+                            </p>
+                            <p>
+                                Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="">privacy policy</a>.
+                            </p>
+                            <button type="submit" class="btn my-3">REGISTER</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -712,7 +774,7 @@
         <i class="fa-solid fa-chevron-up"></i>
     </div>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -19,6 +19,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/searchbar.css">
+    <link rel="stylesheet" href="assets/css/star-rating.css">
     <link rel="icon" href="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cropped-favicon-32x32.png"
         sizes="32x32">
 </head>
@@ -848,7 +849,7 @@
             </div>
         </div>
 
-        <div class="deals">
+        <div class="deals py-4">
             <div class="container-fluid px-4">
                 <div class="row">
                     <div class="col-3">
@@ -887,64 +888,1341 @@
                             </div>
                         </div>
                         <div class="deals-products py-4">
-                            <div class="card product-card col-2 border-0 mx-1"
-                                style="height: 500px; width: 300px; background-color: white !important;">
-                                <div class="img-container">
-                                    <a href="product.html">
-                                        <img class="card-img-top"
-                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
-                                            alt="Card image cap">
-                                    </a>
-                                    <div class="card-options w-100">
-                                        <div class="top py-1">
-                                            <i class="fa-solid fa-eye px-1"></i>
-                                            <i class="fa-solid fa-heart px-1"></i>
-                                            <i class="fa-solid fa-arrows-rotate px-1"></i>
-                                        </div>
-                                        <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                            <span>ADD TO CART</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body border-bottom">
-                                    <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
-                                    <p class="card-text">US $19.00</p>
-                                </div>
-                                <div class="card-bottom">
-                                    <div class="card-bottom-1 py-2 d-flex justify-content-center">
-                                        <div class="sold w-75 d-flex justify-content-between">
-                                            <span>Total Sold : 11</span>
-                                            <span>Stocks : 19</span>
-                                        </div>
-                                    </div>
-                                    <div class="card-bottom-2 py-1 d-flex justify-content-center">
-                                        <div class="progress w-75">
-                                            <div class="bar" style="width:7%">
-                                                <p class="percent"></p>
+                            <div class="deals-slider">
+                                <div class="card product-card col-2 border-0 mx-3"
+                                    style="height: 500px; width: 300px; background-color: white !important;">
+                                    <div class="img-container">
+                                        <a href="product.html">
+                                            <img class="card-img-top"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                        <div class="card-options w-100">
+                                            <div class="top py-1">
+                                                <i class="fa-solid fa-eye px-1"></i>
+                                                <i class="fa-solid fa-heart px-1"></i>
+                                                <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                            </div>
+                                            <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                                <span>ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-bottom-3 py-3">
-                                        <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;"> Limited Time Offer</span>
+                                    <div class="card-body border-bottom">
+                                        <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                                        <p class="card-text">US $19.00</p>
                                     </div>
-                                    <div class="card-bottom-4">
-                                        <span id="timer">
-                                            <span class="d-inline-flex flex-column justify-content-center align-items-center">
-                                                <span id="hour">03</span>
-                                                <span>HR</span>
+                                    <div class="card-bottom">
+                                        <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                            <div class="sold w-75 d-flex justify-content-between">
+                                                <span>Total Sold : 11</span>
+                                                <span>Stocks : 19</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                            <div class="progress w-75">
+                                                <div class="bar" style="width:7%">
+                                                    <p class="percent"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-3 py-3">
+                                            <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                                Limited Time Offer</span>
+                                        </div>
+                                        <div class="card-bottom-4">
+                                            <span id="timer">
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="day">05</span>
+                                                    <span>DAY</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="hour">03</span>
+                                                    <span>HR</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="minute">04</span>
+                                                    <span>MIN</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="second">20</span>
+                                                    <span>SEC</span>
+                                                </span>
                                             </span>
-                                            <span class="d-inline-flex flex-column justify-content-center align-items-center">
-                                                <span id="minute">04</span>
-                                                <span>MIN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card product-card col-2 border-0 mx-3"
+                                    style="height: 500px; width: 300px; background-color: white !important;">
+                                    <div class="img-container">
+                                        <a href="product.html">
+                                            <img class="card-img-top"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                        <div class="card-options w-100">
+                                            <div class="top py-1">
+                                                <i class="fa-solid fa-eye px-1"></i>
+                                                <i class="fa-solid fa-heart px-1"></i>
+                                                <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                            </div>
+                                            <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                                <span>ADD TO CART</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                                        <p class="card-text">US $19.00</p>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                            <div class="sold w-75 d-flex justify-content-between">
+                                                <span>Total Sold : 11</span>
+                                                <span>Stocks : 19</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                            <div class="progress w-75">
+                                                <div class="bar" style="width:7%">
+                                                    <p class="percent"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-3 py-3">
+                                            <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                                Limited Time Offer</span>
+                                        </div>
+                                        <div class="card-bottom-4">
+                                            <span id="timer">
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="day">05</span>
+                                                    <span>DAY</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="hour">03</span>
+                                                    <span>HR</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="minute">04</span>
+                                                    <span>MIN</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="second">20</span>
+                                                    <span>SEC</span>
+                                                </span>
                                             </span>
-                                            <span class="d-inline-flex flex-column justify-content-center align-items-center">
-                                                <span id="second">20</span>
-                                                <span>SEC</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card product-card col-2 border-0 mx-3"
+                                    style="height: 500px; width: 300px; background-color: white !important;">
+                                    <div class="img-container">
+                                        <a href="product.html">
+                                            <img class="card-img-top"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                        <div class="card-options w-100">
+                                            <div class="top py-1">
+                                                <i class="fa-solid fa-eye px-1"></i>
+                                                <i class="fa-solid fa-heart px-1"></i>
+                                                <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                            </div>
+                                            <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                                <span>ADD TO CART</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                                        <p class="card-text">US $19.00</p>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                            <div class="sold w-75 d-flex justify-content-between">
+                                                <span>Total Sold : 11</span>
+                                                <span>Stocks : 19</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                            <div class="progress w-75">
+                                                <div class="bar" style="width:7%">
+                                                    <p class="percent"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-3 py-3">
+                                            <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                                Limited Time Offer</span>
+                                        </div>
+                                        <div class="card-bottom-4">
+                                            <span id="timer">
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="day">05</span>
+                                                    <span>DAY</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="hour">03</span>
+                                                    <span>HR</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="minute">04</span>
+                                                    <span>MIN</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="second">20</span>
+                                                    <span>SEC</span>
+                                                </span>
                                             </span>
-                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card product-card col-2 border-0 mx-3"
+                                    style="height: 500px; width: 300px; background-color: white !important;">
+                                    <div class="img-container">
+                                        <a href="product.html">
+                                            <img class="card-img-top"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                        <div class="card-options w-100">
+                                            <div class="top py-1">
+                                                <i class="fa-solid fa-eye px-1"></i>
+                                                <i class="fa-solid fa-heart px-1"></i>
+                                                <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                            </div>
+                                            <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                                <span>ADD TO CART</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                                        <p class="card-text">US $19.00</p>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                            <div class="sold w-75 d-flex justify-content-between">
+                                                <span>Total Sold : 11</span>
+                                                <span>Stocks : 19</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                            <div class="progress w-75">
+                                                <div class="bar" style="width:7%">
+                                                    <p class="percent"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-3 py-3">
+                                            <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                                Limited Time Offer</span>
+                                        </div>
+                                        <div class="card-bottom-4">
+                                            <span id="timer">
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="day">05</span>
+                                                    <span>DAY</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="hour">03</span>
+                                                    <span>HR</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="minute">04</span>
+                                                    <span>MIN</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="second">20</span>
+                                                    <span>SEC</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card product-card col-2 border-0 mx-3"
+                                    style="height: 500px; width: 300px; background-color: white !important;">
+                                    <div class="img-container">
+                                        <a href="product.html">
+                                            <img class="card-img-top"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                        <div class="card-options w-100">
+                                            <div class="top py-1">
+                                                <i class="fa-solid fa-eye px-1"></i>
+                                                <i class="fa-solid fa-heart px-1"></i>
+                                                <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                            </div>
+                                            <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                                <span>ADD TO CART</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                                        <p class="card-text">US $19.00</p>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                            <div class="sold w-75 d-flex justify-content-between">
+                                                <span>Total Sold : 11</span>
+                                                <span>Stocks : 19</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                            <div class="progress w-75">
+                                                <div class="bar" style="width:7%">
+                                                    <p class="percent"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-bottom-3 py-3">
+                                            <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                                Limited Time Offer</span>
+                                        </div>
+                                        <div class="card-bottom-4">
+                                            <span id="timer">
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="day">05</span>
+                                                    <span>DAY</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="hour">03</span>
+                                                    <span>HR</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="minute">04</span>
+                                                    <span>MIN</span>
+                                                </span>
+                                                <span
+                                                    class="d-inline-flex flex-column justify-content-center align-items-center">
+                                                    <span id="second">20</span>
+                                                    <span>SEC</span>
+                                                </span>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured py-5">
+            <div class="container-fluid container-lg">
+                <div class="row">
+                    <div
+                        class="header col-3 border-bottom d-flex justify-content-between px-4 py-2 my-3 align-items-center">
+                        <p>Featured Products</p>
+                        <a href="shop.html">View All</a>
+                    </div>
+                    <div
+                        class="header col-3 border-bottom d-flex justify-content-between px-4 py-2 my-3 align-items-center">
+                        <p>Newest Products</p>
+                        <a href="shop.html">View All</a>
+                    </div>
+                    <div
+                        class="header col-3 border-bottom d-flex justify-content-between px-4 py-2 my-3 align-items-center">
+                        <p>Top Rated Products</p>
+                        <a href="shop.html">View All</a>
+                    </div>
+                    <div
+                        class="header col-3 border-bottom d-flex justify-content-between px-4 py-2 my-3 align-items-center">
+                        <p>On Sale Products</p>
+                        <a href="shop.html">View All</a>
+                    </div>
+                    <div class="col-3 my-3">
+                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                            <div class="img-container w-50">
+                                <a href="product.html">
+                                    <img class="card-img-top"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body w-50">
+                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                <p class="card-text">US $240.00</p>
+                                <div class="star-rating">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-a" id="rating-5-a">
+                                            <label for="rating-5-a"></label>
+                                            <input type="radio" name="rating-a" id="rating-4-a">
+                                            <label for="rating-4-a"></label>
+                                            <input type="radio" name="rating-a" id="rating-3-a">
+                                            <label for="rating-3-a"></label>
+                                            <input type="radio" name="rating-a" id="rating-2-a">
+                                            <label for="rating-2-a"></label>
+                                            <input type="radio" name="rating-a" id="rating-1-a">
+                                            <label for="rating-1-a"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 my-3">
+                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                            <div class="img-container w-50">
+                                <a href="product.html">
+                                    <img class="card-img-top"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body w-50">
+                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                <p class="card-text">US $240.00</p>
+                                <div class="star-rating">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-b" id="rating-5-b">
+                                            <label for="rating-5-b"></label>
+                                            <input type="radio" name="rating-b" id="rating-4-b">
+                                            <label for="rating-4-b"></label>
+                                            <input type="radio" name="rating-b" id="rating-3-b">
+                                            <label for="rating-3-b"></label>
+                                            <input type="radio" name="rating-b" id="rating-2-b">
+                                            <label for="rating-2-b"></label>
+                                            <input type="radio" name="rating-b" id="rating-1-b">
+                                            <label for="rating-1-b"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 my-3">
+                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                            <div class="img-container w-50">
+                                <a href="product.html">
+                                    <img class="card-img-top"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body w-50">
+                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                <p class="card-text">US $240.00</p>
+                                <div class="star-rating">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-c" id="rating-5-c">
+                                            <label for="rating-5-c"></label>
+                                            <input type="radio" name="rating-c" id="rating-4-c">
+                                            <label for="rating-4-c"></label>
+                                            <input type="radio" name="rating-c" id="rating-3-c">
+                                            <label for="rating-3-c"></label>
+                                            <input type="radio" name="rating-c" id="rating-2-c">
+                                            <label for="rating-2-c"></label>
+                                            <input type="radio" name="rating-c" id="rating-1-c">
+                                            <label for="rating-1-c"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 my-3">
+                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                            <div class="img-container w-50">
+                                <a href="product.html">
+                                    <img class="card-img-top"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body w-50">
+                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                <p class="card-text">US $240.00</p>
+                                <div class="star-rating">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-d" id="rating-5-d">
+                                            <label for="rating-5-d"></label>
+                                            <input type="radio" name="rating-d" id="rating-4-d">
+                                            <label for="rating-4-d"></label>
+                                            <input type="radio" name="rating-d" id="rating-3-d">
+                                            <label for="rating-3-d"></label>
+                                            <input type="radio" name="rating-d" id="rating-2-d">
+                                            <label for="rating-2-d"></label>
+                                            <input type="radio" name="rating-d" id="rating-1-d">
+                                            <label for="rating-1-d"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 my-3">
+                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                            <div class="img-container w-50">
+                                <a href="product.html">
+                                    <img class="card-img-top"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body w-50">
+                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                <p class="card-text">US $240.00</p>
+                                <div class="star-rating">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-e" id="rating-5-e">
+                                            <label for="rating-5-e"></label>
+                                            <input type="radio" name="rating-e" id="rating-4-e">
+                                            <label for="rating-4-e"></label>
+                                            <input type="radio" name="rating-e" id="rating-3-e">
+                                            <label for="rating-3-e"></label>
+                                            <input type="radio" name="rating-e" id="rating-2-e">
+                                            <label for="rating-2-e"></label>
+                                            <input type="radio" name="rating-e" id="rating-1-e">
+                                            <label for="rating-1-e"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 my-3">
+                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                            <div class="img-container w-50">
+                                <a href="product.html">
+                                    <img class="card-img-top"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body w-50">
+                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                <p class="card-text">US $240.00</p>
+                                <div class="star-rating">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f">
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f">
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f">
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f">
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f">
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 my-3">
+                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                            <div class="img-container w-50">
+                                <a href="product.html">
+                                    <img class="card-img-top"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body w-50">
+                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                <p class="card-text">US $240.00</p>
+                                <div class="star-rating">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-g" id="rating-5-g">
+                                            <label for="rating-5-g"></label>
+                                            <input type="radio" name="rating-g" id="rating-4-g">
+                                            <label for="rating-4-g"></label>
+                                            <input type="radio" name="rating-g" id="rating-3-g">
+                                            <label for="rating-3-g"></label>
+                                            <input type="radio" name="rating-g" id="rating-2-g">
+                                            <label for="rating-2-g"></label>
+                                            <input type="radio" name="rating-g" id="rating-1-g">
+                                            <label for="rating-1-g"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 my-3">
+                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                            <div class="img-container w-50">
+                                <a href="product.html">
+                                    <img class="card-img-top"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                        alt="Card image cap">
+                                </a>
+                            </div>
+                            <div class="card-body w-50">
+                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                <p class="card-text">US $240.00</p>
+                                <div class="star-rating">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-h" id="rating-5-h">
+                                            <label for="rating-5-h"></label>
+                                            <input type="radio" name="rating-h" id="rating-4-h">
+                                            <label for="rating-4-h"></label>
+                                            <input type="radio" name="rating-h" id="rating-3-h">
+                                            <label for="rating-3-h"></label>
+                                            <input type="radio" name="rating-h" id="rating-2-h">
+                                            <label for="rating-2-h"></label>
+                                            <input type="radio" name="rating-h" id="rating-1-h">
+                                            <label for="rating-1-h"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="best-selling">
+            <div class="container-lg container-fluid">
+                <div class="best-selling-header d-flex justify-content-center align-items-center flex-column">
+                    <h5>EXCLUSIVE COLLECTION</h5>
+                    <h1 class="py-1">BEST SELLING PRODUCTS</h1>
+                    <div class="category-selection d-flex justify-content-between w-50 py-3 px-5 my-3">
+                        <div class="category-selection-item active-category-selection-item">ALL</div>
+                        <div class="category-selection-item">GAMING</div>
+                        <div class="category-selection-item">ACCESORIES</div>
+                        <div class="category-selection-item">FEATURED</div>
+                        <div class="category-selection-item">HOT SELL</div>
+                        <div class="category-selection-item">TREND</div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-3">
+                        <img src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/sale-left-1.png"
+                            alt="">
+                    </div>
+                    <div class="col-9 row">
+                        <div class="card product-card col-3 mx-2 border"
+                            style="height: fit-content; width: 300px; background-color: white !important;">
+                            <div class="img-container">
+                                <a class="d-inline-flex" href="product.html">
+                                    <img class="card-img-top img-1"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                        alt="Card image cap">
+                                    <img class="card-img-top img-2"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-options w-100">
+                                    <div class="top py-1">
+                                        <i class="fa-solid fa-eye px-1"></i>
+                                        <i class="fa-solid fa-heart px-1"></i>
+                                        <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom border-top p-3 d-flex justify-content-between" style="height: 20%;">
+                                <div class="left text-start">
+                                    <div class="star-rating w-50">
+                                        <div class="feedback">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-i" id="rating-5-i">
+                                                <label for="rating-5-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-4-i">
+                                                <label for="rating-4-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-3-i">
+                                                <label for="rating-3-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-2-i">
+                                                <label for="rating-2-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-1-i">
+                                                <label for="rating-1-i"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product.html">Oppo Reno3 Pro</a>
+                                </div>
+                                <div class="right d-flex flex-column justify-content-between text-end">
+                                    <span class="price text-decoration-line-through">$50.00</span>
+                                    <span class="discounted-price">$25.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card product-card col-3 mx-2 border"
+                            style="height: fit-content; width: 300px; background-color: white !important;">
+                            <div class="img-container">
+                                <a class="d-inline-flex" href="product.html">
+                                    <img class="card-img-top img-1"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                        alt="Card image cap">
+                                    <img class="card-img-top img-2"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-options w-100">
+                                    <div class="top py-1">
+                                        <i class="fa-solid fa-eye px-1"></i>
+                                        <i class="fa-solid fa-heart px-1"></i>
+                                        <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom border-top p-3 d-flex justify-content-between" style="height: 20%;">
+                                <div class="left text-start">
+                                    <div class="star-rating w-50">
+                                        <div class="feedback">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-i" id="rating-5-i">
+                                                <label for="rating-5-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-4-i">
+                                                <label for="rating-4-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-3-i">
+                                                <label for="rating-3-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-2-i">
+                                                <label for="rating-2-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-1-i">
+                                                <label for="rating-1-i"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product.html">Oppo Reno3 Pro</a>
+                                </div>
+                                <div class="right d-flex flex-column justify-content-between text-end">
+                                    <span class="price text-decoration-line-through">$50.00</span>
+                                    <span class="discounted-price">$25.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card product-card col-3 mx-2 border"
+                            style="height: fit-content; width: 300px; background-color: white !important;">
+                            <div class="img-container">
+                                <a class="d-inline-flex" href="product.html">
+                                    <img class="card-img-top img-1"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                        alt="Card image cap">
+                                    <img class="card-img-top img-2"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-options w-100">
+                                    <div class="top py-1">
+                                        <i class="fa-solid fa-eye px-1"></i>
+                                        <i class="fa-solid fa-heart px-1"></i>
+                                        <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom border-top p-3 d-flex justify-content-between" style="height: 20%;">
+                                <div class="left text-start">
+                                    <div class="star-rating w-50">
+                                        <div class="feedback">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-i" id="rating-5-i">
+                                                <label for="rating-5-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-4-i">
+                                                <label for="rating-4-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-3-i">
+                                                <label for="rating-3-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-2-i">
+                                                <label for="rating-2-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-1-i">
+                                                <label for="rating-1-i"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product.html">Oppo Reno3 Pro</a>
+                                </div>
+                                <div class="right d-flex flex-column justify-content-between text-end">
+                                    <span class="price text-decoration-line-through">$50.00</span>
+                                    <span class="discounted-price">$25.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card product-card col-3 mx-2 border"
+                            style="height: fit-content; width: 300px; background-color: white !important;">
+                            <div class="img-container">
+                                <a class="d-inline-flex" href="product.html">
+                                    <img class="card-img-top img-1"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                        alt="Card image cap">
+                                    <img class="card-img-top img-2"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-options w-100">
+                                    <div class="top py-1">
+                                        <i class="fa-solid fa-eye px-1"></i>
+                                        <i class="fa-solid fa-heart px-1"></i>
+                                        <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom border-top p-3 d-flex justify-content-between" style="height: 20%;">
+                                <div class="left text-start">
+                                    <div class="star-rating w-50">
+                                        <div class="feedback">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-i" id="rating-5-i">
+                                                <label for="rating-5-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-4-i">
+                                                <label for="rating-4-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-3-i">
+                                                <label for="rating-3-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-2-i">
+                                                <label for="rating-2-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-1-i">
+                                                <label for="rating-1-i"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product.html">Oppo Reno3 Pro</a>
+                                </div>
+                                <div class="right d-flex flex-column justify-content-between text-end">
+                                    <span class="price text-decoration-line-through">$50.00</span>
+                                    <span class="discounted-price">$25.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card product-card col-3 mx-2 border"
+                            style="height: fit-content; width: 300px; background-color: white !important;">
+                            <div class="img-container">
+                                <a class="d-inline-flex" href="product.html">
+                                    <img class="card-img-top img-1"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                        alt="Card image cap">
+                                    <img class="card-img-top img-2"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-options w-100">
+                                    <div class="top py-1">
+                                        <i class="fa-solid fa-eye px-1"></i>
+                                        <i class="fa-solid fa-heart px-1"></i>
+                                        <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom border-top p-3 d-flex justify-content-between" style="height: 20%;">
+                                <div class="left text-start">
+                                    <div class="star-rating w-50">
+                                        <div class="feedback">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-i" id="rating-5-i">
+                                                <label for="rating-5-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-4-i">
+                                                <label for="rating-4-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-3-i">
+                                                <label for="rating-3-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-2-i">
+                                                <label for="rating-2-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-1-i">
+                                                <label for="rating-1-i"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product.html">Oppo Reno3 Pro</a>
+                                </div>
+                                <div class="right d-flex flex-column justify-content-between text-end">
+                                    <span class="price text-decoration-line-through">$50.00</span>
+                                    <span class="discounted-price">$25.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card product-card col-3 mx-2 border"
+                            style="height: fit-content; width: 300px; background-color: white !important;">
+                            <div class="img-container">
+                                <a class="d-inline-flex" href="product.html">
+                                    <img class="card-img-top img-1"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                        alt="Card image cap">
+                                    <img class="card-img-top img-2"
+                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="card-options w-100">
+                                    <div class="top py-1">
+                                        <i class="fa-solid fa-eye px-1"></i>
+                                        <i class="fa-solid fa-heart px-1"></i>
+                                        <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                        <span>ADD TO CART</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom border-top p-3 d-flex justify-content-between" style="height: 20%;">
+                                <div class="left text-start">
+                                    <div class="star-rating w-50">
+                                        <div class="feedback">
+                                            <div class="rating">
+                                                <input type="radio" name="rating-i" id="rating-5-i">
+                                                <label for="rating-5-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-4-i">
+                                                <label for="rating-4-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-3-i">
+                                                <label for="rating-3-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-2-i">
+                                                <label for="rating-2-i"></label>
+                                                <input type="radio" name="rating-i" id="rating-1-i">
+                                                <label for="rating-1-i"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="product.html">Oppo Reno3 Pro</a>
+                                </div>
+                                <div class="right d-flex flex-column justify-content-between text-end">
+                                    <span class="price text-decoration-line-through">$50.00</span>
+                                    <span class="discounted-price">$25.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="most-popular py-5">
+            <div class="container-lg container-fluid">
+                <div class="most-popular-header d-flex justify-content-center align-items-center flex-column py-3">
+                    <h5>EXCLUSIVE COLLECTION</h5>
+                    <h1 class="py-1">MOST POPULAR VIEWED</h1>
+                </div>
+                <div class="most-popular-slider py-3">
+                    <div class="card product-card col-2 border-0 mx-3"
+                        style="height: 500px; width: 300px; background-color: white !important;">
+                        <div class="img-container">
+                            <a href="product.html">
+                                <img class="card-img-top"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body border-bottom">
+                            <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                            <p class="card-text">US $19.00</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                <div class="sold w-75 d-flex justify-content-between">
+                                    <span>Total Sold : 11</span>
+                                    <span>Stocks : 19</span>
+                                </div>
+                            </div>
+                            <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                <div class="progress w-75">
+                                    <div class="bar" style="width:7%">
+                                        <p class="percent"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom-3 py-3">
+                                <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                    Limited Time Offer</span>
+                            </div>
+                            <div class="card-bottom-4">
+                                <span id="timer">
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="day">05</span>
+                                        <span>DAY</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="hour">03</span>
+                                        <span>HR</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="minute">04</span>
+                                        <span>MIN</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="second">20</span>
+                                        <span>SEC</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card col-2 border-0 mx-3"
+                        style="height: 500px; width: 300px; background-color: white !important;">
+                        <div class="img-container">
+                            <a href="product.html">
+                                <img class="card-img-top"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body border-bottom">
+                            <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                            <p class="card-text">US $19.00</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                <div class="sold w-75 d-flex justify-content-between">
+                                    <span>Total Sold : 11</span>
+                                    <span>Stocks : 19</span>
+                                </div>
+                            </div>
+                            <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                <div class="progress w-75">
+                                    <div class="bar" style="width:7%">
+                                        <p class="percent"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom-3 py-3">
+                                <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                    Limited Time Offer</span>
+                            </div>
+                            <div class="card-bottom-4">
+                                <span id="timer">
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="day">05</span>
+                                        <span>DAY</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="hour">03</span>
+                                        <span>HR</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="minute">04</span>
+                                        <span>MIN</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="second">20</span>
+                                        <span>SEC</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card col-2 border-0 mx-3"
+                        style="height: 500px; width: 300px; background-color: white !important;">
+                        <div class="img-container">
+                            <a href="product.html">
+                                <img class="card-img-top"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body border-bottom">
+                            <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                            <p class="card-text">US $19.00</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                <div class="sold w-75 d-flex justify-content-between">
+                                    <span>Total Sold : 11</span>
+                                    <span>Stocks : 19</span>
+                                </div>
+                            </div>
+                            <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                <div class="progress w-75">
+                                    <div class="bar" style="width:7%">
+                                        <p class="percent"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom-3 py-3">
+                                <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                    Limited Time Offer</span>
+                            </div>
+                            <div class="card-bottom-4">
+                                <span id="timer">
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="day">05</span>
+                                        <span>DAY</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="hour">03</span>
+                                        <span>HR</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="minute">04</span>
+                                        <span>MIN</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="second">20</span>
+                                        <span>SEC</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card col-2 border-0 mx-3"
+                        style="height: 500px; width: 300px; background-color: white !important;">
+                        <div class="img-container">
+                            <a href="product.html">
+                                <img class="card-img-top"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body border-bottom">
+                            <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                            <p class="card-text">US $19.00</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                <div class="sold w-75 d-flex justify-content-between">
+                                    <span>Total Sold : 11</span>
+                                    <span>Stocks : 19</span>
+                                </div>
+                            </div>
+                            <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                <div class="progress w-75">
+                                    <div class="bar" style="width:7%">
+                                        <p class="percent"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom-3 py-3">
+                                <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                    Limited Time Offer</span>
+                            </div>
+                            <div class="card-bottom-4">
+                                <span id="timer">
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="day">05</span>
+                                        <span>DAY</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="hour">03</span>
+                                        <span>HR</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="minute">04</span>
+                                        <span>MIN</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="second">20</span>
+                                        <span>SEC</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card col-2 border-0 mx-3"
+                        style="height: 500px; width: 300px; background-color: white !important;">
+                        <div class="img-container">
+                            <a href="product.html">
+                                <img class="card-img-top"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body border-bottom">
+                            <h5 class="card-title"><a href="product.html">Webcam HD 720p</a></h5>
+                            <p class="card-text">US $19.00</p>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-bottom-1 py-2 d-flex justify-content-center">
+                                <div class="sold w-75 d-flex justify-content-between">
+                                    <span>Total Sold : 11</span>
+                                    <span>Stocks : 19</span>
+                                </div>
+                            </div>
+                            <div class="card-bottom-2 py-1 d-flex justify-content-center">
+                                <div class="progress w-75">
+                                    <div class="bar" style="width:7%">
+                                        <p class="percent"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom-3 py-3">
+                                <span style="color: #F4BA05;">Hurry Up </span><span style="color: #494848;">
+                                    Limited Time Offer</span>
+                            </div>
+                            <div class="card-bottom-4">
+                                <span id="timer">
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="day">05</span>
+                                        <span>DAY</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="hour">03</span>
+                                        <span>HR</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="minute">04</span>
+                                        <span>MIN</span>
+                                    </span>
+                                    <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                                        <span id="second">20</span>
+                                        <span>SEC</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="latest-news py-5 bg-light">
+            <div class="container-lg container-fluid">
+                <div class="latest-news-header d-flex justify-content-center align-items-center flex-column py-3">
+                    <h5>BLOG & NEWS</h5>
+                    <h1 class="py-1">LATEST NEWS UPDATE</h1>
+                </div>
+                <div class="row py-3">
+                    <div class="card product-card col-4 px-3 bg-light border-0">
+                        <div class="img-container" style="height: fit-content;">
+                            <a href="product.html">
+                                <img class="card-img-top"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/venam-blog-1.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body" style="height: fit-content;">
+                            <h1><a href="">Technology series-11 Controller</a></h1>
+                            <div class="links d-inline-flex w-50 justify-content-between d-flex py-3">
+                                <a href="">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span> ADMIN</span>
+                                </a>
+                                <a href="">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <span> 04 MAY</span>
+                                </a>
+                            </div>
+                            <p>Namkand sodales vel online best prices Amazon Check out ethnic wear, formal wear western wear Blood Pressure Rate Monito.</p>
+                            <a class="text-decoration-underline" href="">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card product-card col-4 px-3 bg-light border-0">
+                        <div class="img-container" style="height: fit-content;">
+                            <a href="product.html">
+                                <img class="card-img-top"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/venam-blog-2-768x512.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body" style="height: fit-content;">
+                            <h1><a href="">Technology series-10 Playstation</a></h1>
+                            <div class="links d-inline-flex w-50 justify-content-between d-flex py-3">
+                                <a href="">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span> ADMIN</span>
+                                </a>
+                                <a href="">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <span> 20 JUN</span>
+                                </a>
+                            </div>
+                            <p>Namkand sodales vel online best prices Amazon Check out ethnic wear, formal wear western wear Blood Pressure Rate Monito.</p>
+                            <a class="text-decoration-underline" href="">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card product-card col-4 px-3 bg-light border-0">
+                        <div class="img-container" style="height: fit-content;">
+                            <a href="product.html">
+                                <img class="card-img-top w-100"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/venam-blog-3-768x512.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body" style="height: fit-content;">
+                            <h1><a href="">Technology series-9 Game</a></h1>
+                            <div class="links d-inline-flex w-50 justify-content-between d-flex py-3">
+                                <a href="">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span> ADMIN</span>
+                                </a>
+                                <a href="">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <span> 20 JUN</span>
+                                </a>
+                            </div>
+                            <p>Namkand sodales vel online best prices Amazon Check out ethnic wear, formal wear western wear Blood Pressure Rate Monito.</p>
+                            <a class="text-decoration-underline" href="">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -1147,7 +2425,6 @@
     <div id="to-top-btn" class="d-none">
         <i class="fa-solid fa-chevron-up"></i>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

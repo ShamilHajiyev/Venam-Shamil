@@ -138,6 +138,7 @@ select {
     height: 0px;
     overflow: hidden;
     transition: .4s;
+    z-index: 1;
 }
 
 .all-categories-menu .list {
@@ -198,6 +199,7 @@ select {
     overflow: hidden;
     transition: .4s;
     font-size: 13px;
+    z-index: 1;
 }
 
 .home-menu .list-item {
@@ -280,6 +282,7 @@ select {
     overflow: hidden;
     transition: .4s;
     font-size: 13px;
+    z-index: 1;
 }
 
 .page-menu .list-item {
@@ -306,6 +309,7 @@ select {
     overflow: hidden;
     transition: .4s;
     font-size: 13px;
+    z-index: 1;
 }
 
 .store-menu .list-item {
@@ -332,6 +336,7 @@ select {
     overflow: hidden;
     transition: .4s;
     font-size: 13px;
+    z-index: 1;
 }
 
 .special-menu .list-item {
@@ -730,14 +735,14 @@ footer .footer-bottom .copyright {
 .product-card .card-options {
     overflow: hidden;
     position: absolute;
-    top: 140px;
+    top: 200px;
     opacity: 0;
     left: 0;
     transition: .4s;
 }
 
 .product-card:hover .card-options {
-    top: 128px;
+    top: 180px;
     opacity: 1;
 }
 
@@ -758,6 +763,18 @@ footer .footer-bottom .copyright {
 
 .product-card .card-options .bottom span {
     cursor: pointer;
+}
+
+.product-card .img-container{
+    height: 48%;
+}
+
+.product-card .card-body{
+    height: 20%;
+}
+
+.product-card .card-bottom{
+    height: 32%;
 }
 
 .product-card .card-bottom .sold{
@@ -795,4 +812,179 @@ footer .footer-bottom .copyright {
 .card-bottom-3{
     font-weight: 500;
     font-size: 15px;
+}
+
+.card-bottom-4 #timer>span {
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #303030;
+    color: white;
+    height: 40px;
+    width: 50px;
+    border-radius: 4px;
+}
+
+.card-bottom-4 #timer>span:last-child {
+    background-color: #F4BA05;
+}
+
+.card-bottom-4 #timer #hour,
+.card-bottom-4 #timer #minute,
+.card-bottom-4 #timer #second,
+.card-bottom-4 #timer #day {
+    font-size: 17px;
+}
+
+.featured .header p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.featured .header a{
+    font-size: 15px;
+    color: #FF6000;
+    font-weight: 500;
+}
+
+.featured .card .card-title a{
+    font-size: 16px;
+    transition: .3s;
+}
+
+.featured .card .card-title a:hover{
+    color: #FF6000;
+}
+
+.featured .card .card-text{
+    color: #FF6000;
+}
+
+.best-selling .best-selling-header h5{
+    color: #FF6000;
+    font-size: 12px;
+}
+
+.best-selling .best-selling-header h1{
+    font-size: 33px;
+}
+
+.best-selling .best-selling-header .category-selection{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #656565;
+    letter-spacing: .5px;
+}
+
+.best-selling .best-selling-header .category-selection .category-selection-item{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.active-category-selection-item{
+    color: #FF6000 !important;
+}
+
+.best-selling .product-card .card-bottom .price{
+    color: #656565;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.best-selling .product-card .card-bottom .discounted-price{
+    color: #FF6000;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.best-selling .product-card .card-bottom a{
+    transition: .3s;
+    font-weight: 500;
+}
+
+.best-selling .product-card .card-bottom a:hover{
+    color: #FF6000;
+}
+
+.best-selling .product-card .card-options {
+    overflow: hidden;
+    position: absolute;
+    top: 250px;
+    opacity: 0;
+    left: 0;
+    transition: .4s;
+}
+
+.best-selling .product-card:hover .card-options {
+    top: 215px;
+    opacity: 1;
+}
+
+.best-selling .product-card .img-1 {
+    display: block;
+}
+
+.best-selling .product-card:hover .img-1 {
+    display: none;
+}
+
+.best-selling .product-card .img-2 {
+    display: none;
+}
+
+.best-selling .product-card:hover .img-2 {
+    display: block;
+}
+
+.most-popular{
+    background-color: #F2F2F2;
+}
+
+.most-popular .most-popular-header h5{
+    color: #FF6000;
+    font-size: 12px;
+}
+
+.latest-news .latest-news-header h1{
+    font-size: 33px;
+}
+
+.latest-news .latest-news-header h5{
+    color: #FF6000;
+    font-size: 12px;
+}
+
+.latest-news .latest-news-header h1{
+    font-size: 33px;
+}
+
+.latest-news .product-card .card-body h1 a{
+    font-size: 20px;
+    transition: .3s;
+}
+
+.latest-news .product-card .card-body a:hover{
+    color: #FF6000;
+}
+
+
+.latest-news .product-card .card-body .links a {
+    color: #656565;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.latest-news .product-card .card-body .links a:hover{
+    color: #FF6000;
+}
+
+.latest-news .product-card .card-body p{
+    color: #656565;
+}
+
+.latest-news .product-card .card-body a{
+    transition: .3s;
 }
