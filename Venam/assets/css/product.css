@@ -1,0 +1,247 @@
+.product-header {
+    background-color: #F2F2F2;
+}
+
+.product-header h1 {
+    font-size: 35px;
+}
+
+.product-header .category-selection {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #656565;
+    letter-spacing: .5px;
+    width: 30%;
+}
+
+.product-header .category-selection .category-selection-item {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product-header .category-selection .category-selection-item a {
+    transition: .3s;
+    color: initial;
+}
+
+.product-header .category-selection .category-selection-item a:hover {
+    color: #FF6000;
+}
+
+.product-header .category-selection .category-selection-item-2 {
+    color: #FF6000;
+}
+
+.product-main {
+    background-color: white;
+}
+
+.product-main .main-image {
+    position: relative;
+}
+
+.product-main .main-image i {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.product-main .image-selection .image-selection-item {
+    cursor: pointer;
+}
+
+.active-image-selection-item img {
+    border-color: #FF6000 !important;
+}
+
+.product-details .product-details-header-top .left>span {
+    font-size: 12px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+.product-details .product-details-header-top .right a,
+.product-details .product-details-header-top .right span {
+    cursor: pointer;
+    color: #656565;
+    font-size: 23px;
+}
+
+.product-details>.product-name {
+    font-size: 27px;
+}
+
+.product-details>.star-rating label {
+    width: 20px;
+    height: 20px;
+}
+
+.product-details>.star-rating a {
+    color: #0465D2;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product-details>.product-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FF6000;
+}
+
+.product-details>.product-description {
+    color: #656565;
+    line-height: 32px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.product-details>.product-timer>span {
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #303030;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+}
+
+.product-details>.product-timer>span:last-child {
+    background-color: #F4BA05;
+}
+
+.product-details>.product-timer #hour,
+.product-details>.product-timer #minute,
+.product-details>.product-timer #second,
+.product-details>.product-timer #day {
+    font-size: 17px;
+}
+
+.product-ordered .progress {
+    width: 80%;
+    height: 6px;
+    overflow: hidden;
+    background: #e5e5e5;
+    border-radius: 6px;
+}
+
+.product-ordered .bar {
+    position: relative;
+    float: left;
+    min-width: 1%;
+    height: 100%;
+    background-color: #FF6000;
+    border-radius: 6px;
+}
+
+.product-ordered .percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+
+.product-ordered .sold {
+    font-size: 15px;
+    color: #656565;
+    font-weight: 400;
+}
+
+.actions #count-input {
+    width: 107px;
+    height: 50px;
+    color: #656565;
+    border-radius: 3px;
+}
+
+.actions #count-input #decrease,
+.actions #count-input #decrease {
+    cursor: pointer;
+}
+
+.actions #addtocart{
+    background-color: #FF6000;
+    color: white;
+    transition: .3s;
+    padding: 12px 42px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions #addtocart:hover{
+    background-color: #22252A;
+    color: white;
+}
+
+.actions .action {
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.actions .action:hover {
+    color: #FF6000;
+}
+
+.product-guide>div>.action {
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product-guide>div>.action:hover {
+    color: #FF6000;
+}
+
+.product-guide div.action {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.product-guide div.action .gray{
+    font-weight: 400;
+    color: #656565;
+}
+
+.additional-information .action {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.additional-information .action .gray{
+    font-weight: 400;
+    color: #656565;
+}
+
+.additional-information .action a.gray{
+    transition: .3s;
+}
+
+.additional-information .action a.gray:hover{
+    color: #FF6000;
+}
+
+.additional-information .action a.icon-container{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.description .tabbtn{
+    font-weight: 500;
+    font-size: 18px;
+}

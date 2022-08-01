@@ -13,6 +13,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/searchbar.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/star-rating.css">
     <link rel="icon" href="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cropped-favicon-32x32.png"
         sizes="32x32">
 </head>
@@ -512,8 +514,249 @@
         </div>
     </header>
 
-    <main class="bg-light">
+    <main>
+        <div class="product-header d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="py-3">SHOP</h1>
+            <div class="category-selection bg-light d-flex justify-content-between py-3 px-5 my-3">
+                <div class="category-selection-item active-category-selection-item"><a href="index.html">Home </a></div>
+                <span> ⚫ </span>
+                <div class="category-selection-item active-category-selection-item"><a href="shop.html">Products </a>
+                </div>
+                <span> ⚫ </span>
+                <div class="category-selection-item category-selection-item-2"> My Account</div>
+            </div>
+        </div>
 
+        <div class="container-fluid container-lg">
+            <div class="product-main row py-5">
+                <div class="col-6">
+                    <div class="main-image d-flex justify-content-center align-items-center">
+                        <img class="w-75"
+                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24.jpg" alt="">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="row image-selection">
+                        <div class="col-3 image-selection-item active-image-selection-item">
+                            <img class="w-100 border"
+                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-3 image-selection-item">
+                            <img class="w-100 border"
+                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24_hover.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-3 image-selection-item">
+                            <img class="w-100 border"
+                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img8_hover.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-3 image-selection-item">
+                            <img class="w-100 border"
+                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img8.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-details col-6">
+                    <div class="product-details-header-top row justify-content-between">
+                        <div class="col-2 left">
+                            <span>19 In stock</span>
+                        </div>
+                        <div class="col-2 right d-flex align-items-center justify-content-between">
+                            <span><i class="fa-solid fa-circle-chevron-left"></i></span>
+                            <a href="shop.html"><i class="fa-solid fa-grip-vertical"></i></a>
+                            <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                        </div>
+                    </div>
+
+                    <h1 class="product-name py-3">
+                        Webcam HD 720p
+                    </h1>
+
+                    <div class="star-rating d-flex justify-content-start align-items-center">
+                        <div class="feedback">
+                            <div class="rating">
+                                <input type="radio" name="rating-product" id="rating-5-product" disabled>
+                                <label for="rating-5-product"></label>
+                                <input type="radio" name="rating-product" id="rating-4-product" checked disabled>
+                                <label for="rating-4-product"></label>
+                                <input type="radio" name="rating-product" id="rating-3-product" disabled>
+                                <label for="rating-3-product"></label>
+                                <input type="radio" name="rating-product" id="rating-2-product" disabled>
+                                <label for="rating-2-product"></label>
+                                <input type="radio" name="rating-product" id="rating-1-product" disabled>
+                                <label for="rating-1-product"></label>
+                            </div>
+                        </div>
+                        <a href="">1 customer review</a>
+                    </div>
+
+                    <h1 class="product-price py-3">
+                        $19.00
+                    </h1>
+
+                    <p class="product-description">
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
+                        sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                    </p>
+
+                    <span class="product-timer">
+                        <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <span id="day">00</span>
+                            <span>DAY</span>
+                        </span>
+                        <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <span id="hour">00</span>
+                            <span>HR</span>
+                        </span>
+                        <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <span id="minute">00</span>
+                            <span>MIN</span>
+                        </span>
+                        <span class="d-inline-flex flex-column justify-content-center align-items-center">
+                            <span id="second">00</span>
+                            <span>SEC</span>
+                        </span>
+                    </span>
+
+                    <div class="product-ordered py-3 border-bottom">
+                        <div class="py-2">
+                            <div class="sold d-flex justify-content-between">
+                                <span>Ordered: <span style="color: #FF6000; font-weight: 700;">0</span></span>
+                                <span>Items available: <span style="color: #FF6000; font-weight: 700;">19</span></span>
+                            </div>
+                        </div>
+
+                        <div class="card-bottom-2 py-1">
+                            <div class="progress w-100">
+                                <div class="bar" style="width:7%">
+                                    <p class="percent"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions py-3 my-2">
+                        <div class="d-inline-flex justify-content-between align-items-center w-50">
+                            <span id="count-input"
+                                class="border d-inline-flex justify-content-between align-items-center px-2">
+                                <span id="decrease">-</span>
+                                <span id="count">1</span>
+                                <span id="decrease">+</span>
+                            </span>
+                            <button id="addtocart" class="btn">
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                        <div class="py-4 border-bottom">
+                            <span class="action">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                <span>Compare</span>
+                            </span>
+                            <span class="action">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>Add to Wishlist</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="product-guide">
+                        <div>
+                            <span class="action">
+                                <i class="fa-solid fa-ruler"></i>
+                                <span>Size Guide</span>
+                            </span>
+                            <span class="action">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                                <span>Delivery & Return</span>
+                            </span>
+                            <span class="action">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span>Ask a Question</span>
+                            </span>
+                        </div>
+                        <div class="action py-3">
+                            <i class="fa-solid fa-truck"></i>
+                            <span>Estimated Delivery: <span class="gray">Aug 01 Aug 05</span></span>
+                        </div>
+                        <div class="action">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>29 people <span class="gray">are viewing this right now</span></span>
+                        </div>
+                    </div>
+
+                    <div class="additional-information border-top my-4">
+                        <div class="action py-3">
+                            <span>SKU: <span class="gray">3KJ69SA-A</span></span>
+                        </div>
+                        <div class="action">
+                            <span>Categories: <a class="gray" href="shop.html">Accessories</a>, <a class="gray"
+                                    href="shop.html">Camera</a>, <a class="gray" href="shop.html">Computer</a></span>
+                        </div>
+                        <div class="action py-3">
+                            <span>Tag: <a class="gray" href="shop.html">Simple</a></span>
+                        </div>
+                        <div class="action">
+                            <span>Share:
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #3B5897;">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #1DA0F1;">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #000000;">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #E40023;">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #0077B4;">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #EC8108;">
+                                    <i class="fa-brands fa-odnoklassniki"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #25D165;">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #0085C8;">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #715EEE;">
+                                    <i class="fa-brands fa-viber"></i>
+                                </a>
+                                <a class="icon-container d-inline-flex justify-content-center align-items-center"
+                                    style="background-color: #4C75A3;">
+                                    <i class="fa-brands fa-vk"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="action py-3">
+                            <span>Brands: <a class="gray" href="shop.html">TechnoX</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description my-5">
+                <div class="tab-buttons border-bottom">
+                    <span class="tabbtn border-bottom">Description</span>
+                    <span class="tabbtn border-bottom">Additional Information</span>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -712,12 +955,13 @@
         <i class="fa-solid fa-chevron-up"></i>
     </div>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/selectionbar.js"></script>
+    <script src="assets/js/product.js"></script>
 </body>
 
 </html>
