@@ -106,6 +106,7 @@
                     <i class="fa-solid fa-heart"></i>
                     <a class="d-flex justify-content-center align-items-center" href="cart.html">
                         <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-html-count">0</span>
                     </a>
                 </div>
             </div>
@@ -508,8 +509,9 @@
                         </div>
                     </div>
 
-                    <div class="d-lg-none col-md-3 col-4 py-4"><a href="index.html"><img
-                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/white_logo.png"
+                    <div class="responsive-header-logo d-lg-none col-md-3 col-4 py-4">
+                        <a href="index.html">
+                            <img src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/white_logo.png"
                                 alt=""></a>
                     </div>
 
@@ -1177,7 +1179,7 @@
                             </div>
 
                             <div class="all-products row py-5">
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+                                <div id="0" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
@@ -1194,28 +1196,29 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Apple 256GB</a>
                                         </div>
                                         <div class="right text-start">
                                             <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="discounted-price px-2">$ <span id="product-price">240.00</span></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="1" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/31d0HeVgCSL._AC_-600x600.jpg"
                                                 alt="Card image cap">
                                             <img class="card-img-top img-2"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img18_hover-600x600.jpg"
                                                 alt="Card image cap">
                                         </a>
                                         <div class="card-options w-100">
@@ -1225,28 +1228,30 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Composite Product</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$50.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">40.00</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="2" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
                                                 alt="Card image cap">
                                             <img class="card-img-top img-2"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24_hover.jpg"
                                                 alt="Card image cap">
                                         </a>
                                         <div class="card-options w-100">
@@ -1256,21 +1261,22 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Webcam HD 720p</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$25.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">19.00</span></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="3" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
@@ -1287,28 +1293,29 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Portable Wi-Fi Speaker</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$35.00</span>
+                                            <span class="discounted-price px-2">$ <span id="product-price">33.00</span></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="4" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/31d0HeVgCSL._AC_-600x600.jpg"
                                                 alt="Card image cap">
                                             <img class="card-img-top img-2"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img18_hover-600x600.jpg"
                                                 alt="Card image cap">
                                         </a>
                                         <div class="card-options w-100">
@@ -1318,28 +1325,30 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Portable Air Cooler</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$66.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">12.00</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="5" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
                                                 alt="Card image cap">
                                             <img class="card-img-top img-2"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24_hover.jpg"
                                                 alt="Card image cap">
                                         </a>
                                         <div class="card-options w-100">
@@ -1349,21 +1358,22 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Dual Band Wireless</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$25.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">19.00</span></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="6" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
@@ -1380,28 +1390,29 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">M5 Smart Monitor</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$129.00</span>
+                                            <span class="discounted-price px-2">$ <span id="product-price">99.00</span></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="7" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/31d0HeVgCSL._AC_-600x600.jpg"
                                                 alt="Card image cap">
                                             <img class="card-img-top img-2"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img18_hover-600x600.jpg"
                                                 alt="Card image cap">
                                         </a>
                                         <div class="card-options w-100">
@@ -1411,28 +1422,30 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Apple Iphone 13 Black</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$199.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">149.00</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="8" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
                                                 alt="Card image cap">
                                             <img class="card-img-top img-2"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24_hover.jpg"
                                                 alt="Card image cap">
                                         </a>
                                         <div class="card-options w-100">
@@ -1442,21 +1455,22 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Note 9 128GB</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$899.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">699.00</span></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="9" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
@@ -1473,28 +1487,29 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">PlayStation 5 DualSense</a>
                                         </div>
                                         <div class="right text-start">
                                             <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="discounted-price px-2">$ <span id="product-price">240.00</span></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="10" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/31d0HeVgCSL._AC_-600x600.jpg"
                                                 alt="Card image cap">
                                             <img class="card-img-top img-2"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img18_hover-600x600.jpg"
                                                 alt="Card image cap">
                                         </a>
                                         <div class="card-options w-100">
@@ -1504,28 +1519,30 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">Drones Helicopter</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$650.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">540.00</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card product-card col-3 border-0" style="height: fit-content;">
+
+                                <div id="11" class="card product-card col-3 border-0" style="height: fit-content;">
                                     <div class="img-container">
                                         <a class="d-inline-flex" href="product.html">
                                             <img class="card-img-top img-1"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
                                                 alt="Card image cap">
                                             <img class="card-img-top img-2"
-                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24_hover.jpg"
                                                 alt="Card image cap">
                                         </a>
                                         <div class="card-options w-100">
@@ -1535,17 +1552,82 @@
                                                 <i class="fa-solid fa-arrows-rotate px-1"></i>
                                             </div>
                                             <div class="bottom d-flex justify-content-center align-items-center py-2">
-                                                <span>ADD TO CART</span>
+                                                <span id="basket-btn">ADD TO CART</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-bottom">
                                         <div class="left text-start py-2">
-                                            <a href="product.html">Apple 256GB</a>
+                                            <a id="product-title" href="product.html">LED Projector</a>
                                         </div>
                                         <div class="right text-start">
-                                            <span class="price text-decoration-line-through">$250.00</span>
-                                            <span class="discounted-price px-2">$240.00</span>
+                                            <span class="price text-decoration-line-through">$125.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">85.00</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="12" class="card product-card col-3 border-0" style="height: fit-content;">
+                                    <div class="img-container">
+                                        <a class="d-inline-flex" href="product.html">
+                                            <img class="card-img-top img-1"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/31d0HeVgCSL._AC_-600x600.jpg"
+                                                alt="Card image cap">
+                                            <img class="card-img-top img-2"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img18_hover-600x600.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                        <div class="card-options w-100">
+                                            <div class="top py-1">
+                                                <i class="fa-solid fa-eye px-1"></i>
+                                                <i class="fa-solid fa-heart px-1"></i>
+                                                <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                            </div>
+                                            <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                                <span id="basket-btn">ADD TO CART</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="left text-start py-2">
+                                            <a id="product-title" href="product.html">Smart Televisions</a>
+                                        </div>
+                                        <div class="right text-start">
+                                            <span class="price text-decoration-line-through">$50.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">40.00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="13" class="card product-card col-3 border-0" style="height: fit-content;">
+                                    <div class="img-container">
+                                        <a class="d-inline-flex" href="product.html">
+                                            <img class="card-img-top img-1"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24-600x600.jpg"
+                                                alt="Card image cap">
+                                            <img class="card-img-top img-2"
+                                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/el_img24_hover.jpg"
+                                                alt="Card image cap">
+                                        </a>
+                                        <div class="card-options w-100">
+                                            <div class="top py-1">
+                                                <i class="fa-solid fa-eye px-1"></i>
+                                                <i class="fa-solid fa-heart px-1"></i>
+                                                <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                            </div>
+                                            <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                                <span id="basket-btn">ADD TO CART</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="left text-start py-2">
+                                            <a id="product-title" href="product.html">Surveillance Camera</a>
+                                        </div>
+                                        <div class="right text-start">
+                                            <span class="price text-decoration-line-through">$20.00</span>
+                                            <span class="discounted-price px-2">$<span id="product-price">18.00</span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -2152,6 +2234,7 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
     <script src="assets/js/selectionbar.js"></script>
     <script src="assets/js/filter-price.js"></script>
     <script src="assets/js/slider.js"></script>

@@ -162,7 +162,7 @@
 }
 
 .actions #count-input #decrease,
-.actions #count-input #decrease {
+.actions #count-input #increase {
     cursor: pointer;
 }
 

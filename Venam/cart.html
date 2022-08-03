@@ -105,6 +105,7 @@
                     <i class="fa-solid fa-heart"></i>
                     <a class="d-flex justify-content-center align-items-center" href="cart.html">
                         <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-html-count">0</span>
                     </a>
                 </div>
             </div>
@@ -507,8 +508,9 @@
                         </div>
                     </div>
 
-                    <div class="d-lg-none col-md-3 col-4 py-4"><a href="index.html"><img
-                                src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/white_logo.png"
+                    <div class="responsive-header-logo d-lg-none col-md-3 col-4 py-4">
+                        <a href="index.html">
+                            <img src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/white_logo.png"
                                 alt=""></a>
                     </div>
 
@@ -555,6 +557,41 @@
                     <td class="table-active px-3 py-3"><i class="fa-solid fa-calendar"></i>Your cart is currently empty.
                     </td>
                 </table>
+
+                <div class="row">
+                    <div class="col-8">
+                        <table class="table table-products border">
+                            <tbody>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i id="delete-product" onclick="DeleteProduct()" class="fa-solid fa-trash-can"></i></th>
+                                    <td><img src="assets/images/image2.png" alt=""></td>
+                                    <td><span class="link-like">M5 Smart Monitor</span></td>
+                                    <td>$<span>99.00</span></td>
+                                    <td>
+                                        <span id="count-input">
+                                            <span id="decrease" onclick="DecreaseInput()">-</span>
+                                            <input type="number" oninput="ChangeCount()" class="d-inline-block form-control mx-1" value="1" min="1">
+                                            <span id="decrease" onclick="IncreaseInput()">+</span>
+                                        </span>
+                                    </td>
+                                    <td>$<span>99.00</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="total col-4">
+                        Cart Totals
+                    </div>
+                </div>
             </div>
 
             <div class="return text-center py-4">

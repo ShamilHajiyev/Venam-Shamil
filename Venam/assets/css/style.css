@@ -77,6 +77,24 @@ select {
     color: initial;
 }
 
+.header-mid .links a{
+    position: relative;
+}
+
+.header-mid .links a #cart-html-count{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #F4BA05;
+    border-radius: 100%;
+    height: 17px;
+    width: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
 .header-bottom {
     background-color: #0465D2;
     color: white;

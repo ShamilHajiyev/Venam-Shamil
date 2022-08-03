@@ -8,6 +8,98 @@
     padding-right: 5px;
 }
 
+.cart-main .table-products {
+    font-size: 15px;
+}
+
+.cart-main .table-products th {
+    vertical-align: middle;
+}
+
+.cart-main .table-products td {
+    color: #656565;
+    vertical-align: middle;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.cart-main .table-products img {
+    width: 30px;
+    height: 30px;
+}
+
+.table-products #delete-product {
+    transition: .2s;
+    cursor: pointer;
+}
+
+.table-products #delete-product:hover {
+    color: #FF6000;
+}
+
+.table-products .link-like {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.table-products .link-like:hover {
+    color: #FF6000;
+}
+
+.table-products #count-input {
+    color: #656565;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.table-products #count-input #decrease,
+.table-products #count-input #decrease {
+    cursor: pointer;
+}
+
+.table-products #count-input input {
+    width: 10%;
+    border: none;
+    outline: none;
+}
+
+.table-products #count-input input::-webkit-outer-spin-button,
+.table-products #count-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .return a {
     font-size: 14px;
     padding: 10px 30px;
