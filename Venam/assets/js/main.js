@@ -134,10 +134,31 @@ let categorySelection = document.querySelector('.category-selection');
 let categorySelectionItems = document.querySelectorAll('.category-selection-item');
 
 for (let category of categorySelectionItems) {
-    category.addEventListener('click',function () {
+    category.addEventListener('click', function () {
         for (const removedCategory of categorySelectionItems) {
             removedCategory.classList.remove('active-category-selection-item');
         }
         category.classList.add('active-category-selection-item');
     })
 }
+
+window.addEventListener('scroll', function () {
+    if (document.documentElement.scrollTop > 600) {
+        document.querySelector('.header-top').classList.add('scroll-top');
+        document.querySelector('.header-mid').classList.add('scroll-top');
+        document.querySelector('.header-bottom').classList.add('scroll-top');
+        document.querySelector('.header-bottom-right').classList.add('scroll-top');
+        document.querySelector('.responsive-header-logo img').src = 'https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/logo.png';
+        document.querySelector('.responsive-menu').style.color = 'black';
+        document.body.style.marginTop = '189.5px';
+    }
+    else {
+        document.querySelector('.header-top').classList.remove('scroll-top');
+        document.querySelector('.header-mid').classList.remove('scroll-top');
+        document.querySelector('.header-bottom').classList.remove('scroll-top');
+        document.querySelector('.header-bottom-right').classList.remove('scroll-top');
+        document.querySelector('.responsive-header-logo img').src = 'https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/white_logo.png';
+        document.querySelector('.responsive-menu').style.color = 'white';
+        document.body.style.marginTop = '0';
+    }
+})

@@ -25,6 +25,24 @@ select {
     cursor: pointer;
 }
 
+.header-top.scroll-top,
+.header-mid.scroll-top {
+    display: none !important;
+}
+
+.header-bottom.scroll-top {
+    position: fixed !important;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #FFFFFF !important;
+    box-shadow: 0px 2px 20px 0px #bdbbbb;
+}
+
+.header-bottom .header-bottom-right.scroll-top {
+    color: #303030;
+}
+
 .header-top {
     color: #656565;
     font-size: 15px;
@@ -658,7 +676,7 @@ footer .footer-bottom .copyright {
 
 .advantages i {
     font-size: 40px;
-    color: #494848;
+    color: #7a7878;
     transition: .3s;
 }
 
@@ -669,6 +687,7 @@ footer .footer-bottom .copyright {
 
 .advantages p {
     font-size: 14px;
+    font-weight: 500;
     color: #494848;
 }
 
@@ -691,11 +710,18 @@ footer .footer-bottom .copyright {
 }
 
 .deals .card-samsung .card-title {
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .deals .card-samsung .card-subtitle {
     font-size: 28px;
+}
+
+.deals .card-samsung .card-link {
+    background-color: #FF6000;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .deals .deals-top h5 {
@@ -735,14 +761,14 @@ footer .footer-bottom .copyright {
 .product-card .card-options {
     overflow: hidden;
     position: absolute;
-    top: 200px;
+    top: 220px;
     opacity: 0;
     left: 0;
     transition: .4s;
 }
 
 .product-card:hover .card-options {
-    top: 180px;
+    top: 190px;
     opacity: 1;
 }
 
@@ -765,19 +791,20 @@ footer .footer-bottom .copyright {
     cursor: pointer;
 }
 
-.product-card .img-container{
+.product-card .img-container {
     height: 48%;
 }
 
-.product-card .card-body{
+.product-card .card-body {
     height: 20%;
+    padding-top: 30px;
 }
 
-.product-card .card-bottom{
+.product-card .card-bottom {
     height: 32%;
 }
 
-.product-card .card-bottom .sold{
+.product-card .card-bottom .sold {
     font-size: 12px;
     font-weight: 500;
 }
@@ -809,7 +836,7 @@ footer .footer-bottom .copyright {
     color: white;
 }
 
-.card-bottom-3{
+.card-bottom-3 {
     font-weight: 500;
     font-size: 15px;
 }
@@ -835,41 +862,49 @@ footer .footer-bottom .copyright {
     font-size: 17px;
 }
 
-.featured .header p{
+.featured .header p {
     font-size: 20px;
     font-weight: 500;
     margin: 0;
 }
 
-.featured .header a{
+.featured .header a {
     font-size: 15px;
     color: #FF6000;
     font-weight: 500;
 }
 
-.featured .card .card-title a{
+.featured .card {
+    transition: .3s;
+}
+
+.featured .card:hover {
+    border-color: black !important;
+}
+
+.featured .card .card-title a {
     font-size: 16px;
     transition: .3s;
 }
 
-.featured .card .card-title a:hover{
+.featured .card .card-title a:hover {
     color: #FF6000;
 }
 
-.featured .card .card-text{
+.featured .card .card-text {
     color: #FF6000;
 }
 
-.best-selling .best-selling-header h5{
+.best-selling .best-selling-header h5 {
     color: #FF6000;
     font-size: 12px;
 }
 
-.best-selling .best-selling-header h1{
+.best-selling .best-selling-header h1 {
     font-size: 33px;
 }
 
-.best-selling .best-selling-header .category-selection{
+.best-selling .best-selling-header .category-selection {
     background-color: #F2F2F2;
     border-radius: 30px;
     font-size: 14px;
@@ -878,33 +913,33 @@ footer .footer-bottom .copyright {
     letter-spacing: .5px;
 }
 
-.best-selling .best-selling-header .category-selection .category-selection-item{
+.best-selling .best-selling-header .category-selection .category-selection-item {
     cursor: pointer;
     transition: .3s;
 }
 
-.active-category-selection-item{
+.active-category-selection-item {
     color: #FF6000 !important;
 }
 
-.best-selling .product-card .card-bottom .price{
+.best-selling .product-card .card-bottom .price {
     color: #656565;
     font-size: 14px;
     font-weight: 500;
 }
 
-.best-selling .product-card .card-bottom .discounted-price{
+.best-selling .product-card .card-bottom .discounted-price {
     color: #FF6000;
     font-size: 17px;
     font-weight: 500;
 }
 
-.best-selling .product-card .card-bottom a{
+.best-selling .product-card .card-bottom a {
     transition: .3s;
     font-weight: 500;
 }
 
-.best-selling .product-card .card-bottom a:hover{
+.best-selling .product-card .card-bottom a:hover {
     color: #FF6000;
 }
 
@@ -938,34 +973,34 @@ footer .footer-bottom .copyright {
     display: block;
 }
 
-.most-popular{
+.most-popular {
     background-color: #F2F2F2;
 }
 
-.most-popular .most-popular-header h5{
+.most-popular .most-popular-header h5 {
     color: #FF6000;
     font-size: 12px;
 }
 
-.latest-news .latest-news-header h1{
+.latest-news .latest-news-header h1 {
     font-size: 33px;
 }
 
-.latest-news .latest-news-header h5{
+.latest-news .latest-news-header h5 {
     color: #FF6000;
     font-size: 12px;
 }
 
-.latest-news .latest-news-header h1{
+.latest-news .latest-news-header h1 {
     font-size: 33px;
 }
 
-.latest-news .product-card .card-body h1 a{
+.latest-news .product-card .card-body h1 a {
     font-size: 20px;
     transition: .3s;
 }
 
-.latest-news .product-card .card-body a:hover{
+.latest-news .product-card .card-body a:hover {
     color: #FF6000;
 }
 
@@ -977,14 +1012,14 @@ footer .footer-bottom .copyright {
     transition: .3s;
 }
 
-.latest-news .product-card .card-body .links a:hover{
+.latest-news .product-card .card-body .links a:hover {
     color: #FF6000;
 }
 
-.latest-news .product-card .card-body p{
+.latest-news .product-card .card-body p {
     color: #656565;
 }
 
-.latest-news .product-card .card-body a{
+.latest-news .product-card .card-body a {
     transition: .3s;
 }

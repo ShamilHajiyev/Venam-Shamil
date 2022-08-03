@@ -169,7 +169,7 @@
     transition: .3s;
 }
 
-.shop-filter .price .price-title:hover{
+.shop-filter .price .price-title:hover {
     background-color: #FF6000;
     color: white;
 }
@@ -212,11 +212,11 @@
     transition-duration: 0.3s;
 }
 
-.shop-filter .price .price-field input{
+.shop-filter .price .price-field input {
     color: black;
 }
 
-.shop-filter .price .price-span{
+.shop-filter .price .price-span {
     color: #656565;
     font-weight: 500;
 }

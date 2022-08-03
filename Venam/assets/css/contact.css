@@ -1,12 +1,12 @@
-.contact-header{
+.contact-header {
     background-color: #F2F2F2;
 }
 
-.contact-header h1{
+.contact-header h1 {
     font-size: 35px;
 }
 
-.contact-header .category-selection{
+.contact-header .category-selection {
     background-color: #F2F2F2;
     border-radius: 30px;
     font-size: 14px;
@@ -16,21 +16,21 @@
     width: 20%;
 }
 
-.contact-header .category-selection .category-selection-item{
+.contact-header .category-selection .category-selection-item {
     cursor: pointer;
     transition: .3s;
 }
 
-.contact-header .category-selection .category-selection-item a{
+.contact-header .category-selection .category-selection-item a {
     transition: .3s;
     color: initial;
 }
 
-.contact-header .category-selection .category-selection-item a:hover{
+.contact-header .category-selection .category-selection-item a:hover {
     color: #FF6000;
 }
 
-.contact-header .category-selection .category-selection-item-2{
+.contact-header .category-selection .category-selection-item-2 {
     color: #FF6000;
 }
 
@@ -49,24 +49,24 @@
     font-weight: 500;
 }
 
-.contacts .contact .icon-container{
+.contacts .contact .icon-container {
     width: 75px;
     height: 75px;
     border-radius: 100%;
     background-color: #FF6000;
 }
 
-.send-header h5{
+.send-header h5 {
     color: #FF6000;
     font-size: 12px;
     font-weight: 500;
 }
 
-.send-body textarea{
+.send-body textarea {
     max-height: 240px;
 }
 
-.send-body button{
+.send-body button {
     background-color: #FF6000;
     color: white;
     transition: .3s;
@@ -75,7 +75,7 @@
     font-weight: 600;
 }
 
-.send-body button:hover{
+.send-body button:hover {
     background-color: #22252A;
     color: white;
 }

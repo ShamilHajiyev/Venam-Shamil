@@ -1,12 +1,12 @@
-.shop-header{
+.shop-header {
     background-color: #F2F2F2;
 }
 
-.shop-header h1{
-    font-size: 35px;
+.shop-header h1 {
+    font-size: 50px;
 }
 
-.shop-header .category-selection{
+.shop-header .category-selection {
     background-color: #F2F2F2;
     border-radius: 30px;
     font-size: 14px;
@@ -16,34 +16,40 @@
     width: 15%;
 }
 
-.shop-header .category-selection .category-selection-item{
+.shop-header .category-selection span {
+    font-size: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.shop-header .category-selection .category-selection-item {
     cursor: pointer;
     transition: .3s;
 }
 
-.shop-header .category-selection .category-selection-item a{
+.shop-header .category-selection .category-selection-item a {
     transition: .3s;
     color: #656565;
 }
 
-.shop-header .category-selection .category-selection-item a:hover{
+.shop-header .category-selection .category-selection-item a:hover {
     color: #FF6000;
 }
 
-.shop-header .category-selection .category-selection-item-2{
+.shop-header .category-selection .category-selection-item-2 {
     color: #FF6000;
 }
 
-.shop-filter h4{
+.shop-filter h4 {
     font-size: 22px;
 }
 
-.shop-filter input[type=checkbox]{
+.shop-filter input[type=checkbox] {
     margin-right: 10px;
 }
 
 .shop-filter input[type=checkbox],
-.shop-filter label{
+.shop-filter label {
     cursor: pointer;
     font-size: 13px;
     font-weight: 400;
@@ -55,14 +61,14 @@
     cursor: pointer;
 }
 
-.shop-filter .colors .color-count{
+.shop-filter .colors .color-count {
     background-color: #F2F2F2;
     color: #656565;
     padding: 3px 10px;
     border-radius: 5px;
 }
 
-.search-products input{
+.search-products input {
     outline: none;
     border-radius: 4px 0px 0px 4px;
     font-size: 13px;
@@ -71,9 +77,9 @@
     width: 70%;
 }
 
-.search-products .icon-container{
+.search-products .icon-container {
     width: 30%;
-    font-size: 17px;
+    font-size: 18px;
     background-color: #E2E2E2;
     color: black;
     display: flex;
@@ -86,7 +92,7 @@
     transition: .3s;
 }
 
-.search-products .icon-container:hover{
+.search-products .icon-container:hover {
     background-color: #FF6000;
     color: white;
     border-color: #FF6000;
@@ -100,20 +106,41 @@
     transition: .3s;
 }
 
-.shop-filter .product-tags span:hover{
+.shop-filter .product-tags span:hover {
     background-color: #FF6000;
     color: white;
 }
 
-.shop-filter .on-sale-products{
-    visibility: visible;
+.shop-filter .card h5>a {
+    font-size: 15px;
+    color: black;
 }
 
-.shop-filter .recently-viewed{
-    visibility: visible;
+.shop-filter .card .card-body {
+    padding-right: 0;
 }
 
-.modern-technology-product{
+.shop-filter .card .star-rating label {
+    height: 20px;
+    width: 10%;
+}
+
+.shop-filter .card .card-text {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.shop-filter .card .card-text .card-price {
+    color: #656565;
+    text-decoration: line-through;
+}
+
+.shop-filter .card .card-text .card-price-discounted {
+    color: #FF6000;
+    font-size: 16px;
+}
+
+.modern-technology-product {
     border-radius: 4px;
     background-image: url(https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/banner-1.jpg);
     background-repeat: no-repeat;
@@ -121,21 +148,21 @@
     background-size: contain;
 }
 
-.modern-technology-product-2{
+.modern-technology-product-2 {
     background-image: url(https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/banner-2.jpg) !important;
 }
 
-.modern-technology-product h5{
+.modern-technology-product h5 {
     font-size: 12px !important;
     color: #656565;
     letter-spacing: 1px;
 }
 
-.modern-technology-product h1{
+.modern-technology-product h1 {
     font-size: 27px !important;
 }
 
-.modern-technology-product p{
+.modern-technology-product p {
     font-size: 14px;
     color: #656565;
 }
@@ -149,27 +176,27 @@
     transition: .3s;
 }
 
-.modern-technology-product a:hover{
+.modern-technology-product a:hover {
     background-color: #22252A;
     color: white;
 }
 
-.shop-main .all-categories{
+.shop-main .all-categories {
     background-color: #f2f2f2;
     border-radius: 5px;
 }
 
-.shop-main .all-categories h4{
+.shop-main .all-categories h4 {
     font-size: 22px;
 }
 
-.shop-main .all-categories .card{
+.shop-main .all-categories .card {
     width: 120px;
     background-color: inherit;
     position: relative;
 }
 
-.shop-main .all-categories .card .card-count{
+.shop-main .all-categories .card .card-count {
     position: absolute;
     top: 7px;
     left: 7px;
@@ -180,14 +207,84 @@
     font-size: 11px;
     font-weight: 500;
     border-radius: 3px;
-    
+
 }
 
-.shop-main .all-categories .card h5{
+.shop-main .all-categories .card h5 {
     font-size: 15px;
 }
 
-.shop-main .all-categories .card .img-container{
+.shop-main .all-categories .card .img-container {
     background-color: white;
     border-radius: 4px;
+}
+
+.shop-main-products .shop-nav {
+    color: #656565;
+    font-size: 14px;
+}
+
+.shop-main-products .shop-nav .left a {
+    color: black;
+}
+
+.shop-main-products .shop-nav .right-show {
+    color: black;
+}
+
+.shop-main-products .shop-nav .right .c-pointer {
+    cursor: pointer;
+}
+
+.shop-main-products .all-products .product-card .card-bottom .discounted-price {
+    color: #FF6000;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.shop-main-products .all-products .product-card .card-bottom .price {
+    color: #656565;
+}
+
+.shop-main-products .all-products .product-card .card-bottom a {
+    transition: .3s;
+    font-weight: 500;
+}
+
+.shop-main-products .all-products .product-card .card-bottom a:hover {
+    color: #FF6000;
+}
+
+.shop-main-products .all-products .product-card .card-options {
+    overflow: hidden;
+    position: absolute;
+    top: 175px;
+    opacity: 0;
+    left: 0;
+    transition: .4s;
+}
+
+.shop-main-products .all-products .product-card:hover .card-options {
+    top: 150px;
+    opacity: 1;
+}
+
+.shop-main-products .all-products .product-card .img-1 {
+    display: block;
+}
+
+.shop-main-products .all-products .product-card:hover .img-1 {
+    display: none;
+}
+
+.shop-main-products .all-products .product-card .img-2 {
+    display: none;
+}
+
+.shop-main-products .all-products .product-card:hover .img-2 {
+    display: block;
+}
+
+.shop-main .featured .card .star-rating label {
+    width: 20px;
 }
