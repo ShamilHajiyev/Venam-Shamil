@@ -58,7 +58,7 @@
 }
 
 .table-products #count-input input {
-    width: 10%;
+    width: 20%;
     border: none;
     outline: none;
 }
@@ -69,36 +69,22 @@
     margin: 0;
 }
 
+.table-products tfoot button{
+    font-size: 14px;
+    background-color: #FF6000;
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+}
 
+.table-products tfoot button:hover{
+    background-color: #22252A;
+    color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cart-totals{
+    background-color: #F2F2F2;
+}
 
 .return a {
     font-size: 14px;

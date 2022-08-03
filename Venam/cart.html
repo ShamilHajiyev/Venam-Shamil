@@ -558,10 +558,10 @@
                     </td>
                 </table>
 
-                <div class="row">
-                    <div class="col-8">
-                        <table class="table table-products border">
-                            <tbody>
+                <div class="row product-window">
+                    <div class="col-8 border">
+                        <table class="table table-products">
+                            <thead>
                                 <tr>
                                     <th scope="col"></th>
                                     <th scope="col"></th>
@@ -570,26 +570,59 @@
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Subtotal</th>
                                 </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                
+                            </tbody>
+                            <tfoot class="border-0">
+                                <td class="border-0" colspan="2">
+                                    <input type="text" class="form-control" placeholder="Coupon Code">
+                                </td>
+                                <td class="border-0">
+                                    <button class="btn mx-2" type="submit">APPLY COUPON</button>
+                                </td>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="cart-totals col-4">
+                        <h3>Cart Totals</h3>
+                        <table class="table table-totals border">
+                            <tbody>
                                 <tr>
-                                    <th scope="row"><i id="delete-product" onclick="DeleteProduct()" class="fa-solid fa-trash-can"></i></th>
-                                    <td><img src="assets/images/image2.png" alt=""></td>
-                                    <td><span class="link-like">M5 Smart Monitor</span></td>
-                                    <td>$<span>99.00</span></td>
+                                    <th scope="row">Subtotal</th>
+                                    <td>$<span id="subtotal-price">480.00</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Shipping</th>
                                     <td>
-                                        <span id="count-input">
-                                            <span id="decrease" onclick="DecreaseInput()">-</span>
-                                            <input type="number" oninput="ChangeCount()" class="d-inline-block form-control mx-1" value="1" min="1">
-                                            <span id="decrease" onclick="IncreaseInput()">+</span>
-                                        </span>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Free shipping
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                Flat rate
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                Local pickup
+                                            </label>
+                                          </div>
+                                          <p class="py-2">Shipping to AK.</p>
+                                          <p>Change address</p>
                                     </td>
-                                    <td>$<span>99.00</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total</th>
+                                    <td>$<span id="total-price">480.00</span></td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-
-                    <div class="total col-4">
-                        Cart Totals
                     </div>
                 </div>
             </div>
