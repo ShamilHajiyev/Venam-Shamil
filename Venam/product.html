@@ -8,6 +8,12 @@
     <title>Product - Venam</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -751,9 +757,720 @@
             </div>
 
             <div class="description my-5">
-                <div class="tab-buttons border-bottom">
-                    <span class="tabbtn border-bottom">Description</span>
-                    <span class="tabbtn border-bottom">Additional Information</span>
+                <div class="tab-buttons border-bottom py-3">
+                    <span class="tabbtn px-2 tab-active">Description</span>
+                    <span class="tabbtn px-2">Additional Information</span>
+                </div>
+                <div class="tab-menu description-menu my-5">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Vivamus bibendum magna
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Contrary to popular belief, Lorem Ipsum
+                        is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old.</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                        dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                    </p>
+                </div>
+                <div class="tab-menu additional-menu my-5 d-none">
+                    <table class="table border-top">
+                        <tr>
+                            <th class="w-25" scope="row">Color</th>
+                            <td>
+                                <a href="shop.html">Black</a>,
+                                <a href="shop.html">Blue</a>,
+                                <a href="shop.html">Pink</a>,
+                                <a href="shop.html">Yellow</a>
+                            </td>
+                        </tr>
+                        <tr class="table-active">
+                            <th class="w-25" scope="row">Size</th>
+                            <td>
+                                L, M, S, XL, XS</td>
+                        </tr>
+                        <tr>
+                            <th class="w-25" scope="row">Discounts</th>
+                            <td>
+                                <a href="shop.html">10%</a>,
+                                <a href="shop.html">12%</a>,
+                                <a href="shop.html">20%</a>,
+                                <a href="shop.html">30%</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="also-liked">
+                <h1 class="border-bottom py-4">Viewers Also Liked</h1>
+
+                <div class="also-liked-slider py-3">
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card product-card mx-2 border-0" style="height: fit-content;">
+                        <div class="img-container">
+                            <a class="d-inline-flex" href="product.html">
+                                <img class="card-img-top img-1"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img9_hover-500x500.jpg"
+                                    alt="Card image cap">
+                                <img class="card-img-top img-2"
+                                    src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/el_img6_hover-450x450.jpg"
+                                    alt="Card image cap">
+                            </a>
+                            <div class="card-options w-100">
+                                <div class="top py-1">
+                                    <i class="fa-solid fa-eye px-1"></i>
+                                    <i class="fa-solid fa-heart px-1"></i>
+                                    <i class="fa-solid fa-arrows-rotate px-1"></i>
+                                </div>
+                                <div class="bottom d-flex justify-content-center align-items-center py-2">
+                                    <span>ADD TO CART</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bottom p-3" style="height: 20%;">
+                            <div class="left text-start">
+                                <div class="star-rating w-50">
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-f" id="rating-5-f" checked disabled>
+                                            <label for="rating-5-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-4-f" disabled>
+                                            <label for="rating-4-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-3-f" disabled>
+                                            <label for="rating-3-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-2-f" disabled>
+                                            <label for="rating-2-f"></label>
+                                            <input type="radio" name="rating-f" id="rating-1-f" disabled>
+                                            <label for="rating-1-f"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="d-inline-block py-2" href="product.html">Oppo Reno3 Pro</a>
+                            </div>
+                            <div class="price text-start">
+                                $25.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-reviews my-5">
+                <h1 class="border-bottom py-4">Product Reviews</h1>
+
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="py-3 review-header">Reviews</h1>
+                        <div class="review row">
+                            <div class="col-2">
+                                <img src="https://ninetheme.com/themes/venam/v1/wp-content/litespeed/avatar/c9a2c41035dc23b5c4014909eb906bc0.jpg"
+                                    alt="">
+                            </div>
+                            <div class="col-10">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-6 username">John Doe <span class="gray">– July 3, 2021</span></div>
+                                    <div class="col-6">
+                                        <div class="star-rating d-flex justify-content-start align-items-center">
+                                            <div class="feedback w-100">
+                                                <div class="rating w-100">
+                                                    <input type="radio" name="rating-review" id="rating-5-review"
+                                                        disabled>
+                                                    <label for="rating-5-review"></label>
+                                                    <input type="radio" name="rating-review" id="rating-4-review"
+                                                        checked disabled>
+                                                    <label for="rating-4-review"></label>
+                                                    <input type="radio" name="rating-review" id="rating-3-review"
+                                                        disabled>
+                                                    <label for="rating-3-review"></label>
+                                                    <input type="radio" name="rating-review" id="rating-2-review"
+                                                        disabled>
+                                                    <label for="rating-2-review"></label>
+                                                    <input type="radio" name="rating-review" id="rating-1-review"
+                                                        disabled>
+                                                    <label for="rating-1-review"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="gray">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                    blanditiis praesentium
+                                    voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                                    mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+                                    expedita distinctio.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 add-review">
+                        <h1 class="py-3 add-review-header">Add a review</h1>
+                        <h5>Your email address will not be published. Required fields are marked <span
+                                class="star">*</span></h5>
+                        <h5 class="your-rating py-3">YOUR RATING <span class="star">*</span></h5>
+                        <div class="star-rating d-flex justify-content-start align-items-center">
+                            <div class="feedback">
+                                <div class="rating">
+                                    <input type="radio" name="rating-5-review-add" id="rating-5-review-add">
+                                    <label for="rating-5-review-add"></label>
+                                    <input type="radio" name="rating-5-review-add" id="rating-4-review-add">
+                                    <label for="rating-4-review-add"></label>
+                                    <input type="radio" name="rating-5-review-add" id="rating-3-review-add">
+                                    <label for="rating-3-review-add"></label>
+                                    <input type="radio" name="rating-5-review-add" id="rating-2-review-add">
+                                    <label for="rating-2-review-add"></label>
+                                    <input type="radio" name="rating-5-review-add" id="rating-1-review-add">
+                                    <label for="rating-1-review-add"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <select class="form-select rating-select my-3 py-2 px-3" aria-label="Default select example">
+                                <option selected>Rate...</option>
+                                <option value="1">Perfect</option>
+                                <option value="2">Good</option>
+                                <option value="3">Average</option>
+                                <option value="4">Not that bad</option>
+                                <option value="5">Very poor</option>
+                            </select>
+                            <h5 class="">YOUR REVIEW <span class="star">*</span></h5>
+                            <textarea class="form-control" rows="10"></textarea>
+                            <div class="form-row row py-2 my-2">
+                                <div class="form-group col-6">
+                                    <h5 class="">Name <span class="star">*</span></h5>
+                                    <input type="text" class="form-control py-3">
+                                </div>
+                                <div class="form-group col-6">
+                                    <h5 class="">Email <span class="star">*</span></h5>
+                                    <input type="email" class="form-control py-3">
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="save">
+                                <label class="form-check-label m-0 p-0 save" for="save">
+                                    Save my name, email, and website in this browser for the next time I comment.
+                                </label>
+                            </div>
+                            <button type="submit" class="btn my-4">SUBMIT</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -959,9 +1676,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/selectionbar.js"></script>
     <script src="assets/js/product.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>

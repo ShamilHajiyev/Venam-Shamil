@@ -1,0 +1,193 @@
+.shop-header{
+    background-color: #F2F2F2;
+}
+
+.shop-header h1{
+    font-size: 35px;
+}
+
+.shop-header .category-selection{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #656565;
+    letter-spacing: .5px;
+    width: 15%;
+}
+
+.shop-header .category-selection .category-selection-item{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.shop-header .category-selection .category-selection-item a{
+    transition: .3s;
+    color: #656565;
+}
+
+.shop-header .category-selection .category-selection-item a:hover{
+    color: #FF6000;
+}
+
+.shop-header .category-selection .category-selection-item-2{
+    color: #FF6000;
+}
+
+.shop-filter h4{
+    font-size: 22px;
+}
+
+.shop-filter input[type=checkbox]{
+    margin-right: 10px;
+}
+
+.shop-filter input[type=checkbox],
+.shop-filter label{
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.shop-filter .colors .color,
+.shop-filter .colors .color-count {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.shop-filter .colors .color-count{
+    background-color: #F2F2F2;
+    color: #656565;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.search-products input{
+    outline: none;
+    border-radius: 4px 0px 0px 4px;
+    font-size: 13px;
+    color: #656565;
+    height: 100%;
+    width: 70%;
+}
+
+.search-products .icon-container{
+    width: 30%;
+    font-size: 17px;
+    background-color: #E2E2E2;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    height: 100%;
+    border: 1px solid #E2E2E2;
+    transition: .3s;
+}
+
+.search-products .icon-container:hover{
+    background-color: #FF6000;
+    color: white;
+    border-color: #FF6000;
+}
+
+.shop-filter .product-tags span {
+    font-size: 11px;
+    background-color: #E2E2E2;
+    color: black;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.shop-filter .product-tags span:hover{
+    background-color: #FF6000;
+    color: white;
+}
+
+.shop-filter .on-sale-products{
+    visibility: visible;
+}
+
+.shop-filter .recently-viewed{
+    visibility: visible;
+}
+
+.modern-technology-product{
+    border-radius: 4px;
+    background-image: url(https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/08/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.modern-technology-product-2{
+    background-image: url(https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/06/banner-2.jpg) !important;
+}
+
+.modern-technology-product h5{
+    font-size: 12px !important;
+    color: #656565;
+    letter-spacing: 1px;
+}
+
+.modern-technology-product h1{
+    font-size: 27px !important;
+}
+
+.modern-technology-product p{
+    font-size: 14px;
+    color: #656565;
+}
+
+.modern-technology-product a {
+    background-color: #0465D2;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.modern-technology-product a:hover{
+    background-color: #22252A;
+    color: white;
+}
+
+.shop-main .all-categories{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.shop-main .all-categories h4{
+    font-size: 22px;
+}
+
+.shop-main .all-categories .card{
+    width: 120px;
+    background-color: inherit;
+    position: relative;
+}
+
+.shop-main .all-categories .card .card-count{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    height: 20px;
+    width: 20px;
+    background-color: #FF6000;
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 3px;
+    
+}
+
+.shop-main .all-categories .card h5{
+    font-size: 15px;
+}
+
+.shop-main .all-categories .card .img-container{
+    background-color: white;
+    border-radius: 4px;
+}

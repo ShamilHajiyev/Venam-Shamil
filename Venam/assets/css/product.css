@@ -166,7 +166,7 @@
     cursor: pointer;
 }
 
-.actions #addtocart{
+.actions #addtocart {
     background-color: #FF6000;
     color: white;
     transition: .3s;
@@ -175,7 +175,7 @@
     font-weight: 600;
 }
 
-.actions #addtocart:hover{
+.actions #addtocart:hover {
     background-color: #22252A;
     color: white;
 }
@@ -209,7 +209,7 @@
     font-weight: 600;
 }
 
-.product-guide div.action .gray{
+.product-guide div.action .gray {
     font-weight: 400;
     color: #656565;
 }
@@ -219,20 +219,20 @@
     font-weight: 600;
 }
 
-.additional-information .action .gray{
+.additional-information .action .gray {
     font-weight: 400;
     color: #656565;
 }
 
-.additional-information .action a.gray{
+.additional-information .action a.gray {
     transition: .3s;
 }
 
-.additional-information .action a.gray:hover{
+.additional-information .action a.gray:hover {
     color: #FF6000;
 }
 
-.additional-information .action a.icon-container{
+.additional-information .action a.icon-container {
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -241,7 +241,162 @@
     cursor: pointer;
 }
 
-.description .tabbtn{
+.description .tabbtn {
     font-weight: 500;
     font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.description .tabbtn.tab-active::after {
+    content: '';
+    position: absolute;
+    background-color: #FF6000;
+    width: 88%;
+    height: 1px;
+    top: 42px;
+    left: 6%;
+}
+
+.description .description-menu {
+    color: #656565;
+}
+
+.description .additional-menu td {
+    font-style: italic;
+}
+
+.description .additional-menu a {
+    color: #0465D2;
+}
+
+.also-liked>h1{
+    font-size: 22px;
+}
+
+.also-liked .product-card .card-bottom .price {
+    color: #FF6000;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.also-liked .product-card .card-bottom a {
+    transition: .3s;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.also-liked .product-card .card-bottom a:hover {
+    color: #FF6000;
+}
+
+.also-liked .product-card .img-1 {
+    display: block;
+}
+
+.also-liked .product-card:hover .img-1 {
+    display: none;
+}
+
+.also-liked .product-card .img-2 {
+    display: none;
+}
+
+.also-liked .product-card:hover .img-2 {
+    display: block;
+}
+
+.also-liked .product-card .card-options {
+    overflow: hidden;
+    position: absolute;
+    top: 175px;
+    opacity: 0;
+    left: 0;
+    transition: .4s;
+}
+
+.also-liked .product-card:hover .card-options {
+    top: 160px;
+    opacity: 1;
+}
+
+.product-reviews>h1{
+    font-size: 22px;
+}
+
+.product-reviews .review img{
+    border-radius: 100%;
+}
+
+.product-reviews .review .username{
+    font-weight: 600;
+}
+
+.product-reviews .review .gray{
+    color: #656565;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.product-reviews .review .star-rating label{
+    width: 8% !important;
+}
+
+.product-reviews .your-review .star-rating label{
+    width: 8% !important;
+}
+
+.review-header,
+.add-review-header{
+    font-size: 17px;
+}
+
+.add-review h5{
+    font-size: 14px;
+    color: #656565;
+    font-weight: 400;
+}
+
+.add-review .star{
+    color: #FF6000;
+}
+
+.add-review .your-rating{
+    color: black;
+    font-weight: 500;
+}
+
+.add-review .star-rating label{
+    width: 20px !important;
+}
+
+.add-review .rating-select{
+    color: #656565;
+}
+
+.add-review form h5{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+.add-review form textarea{
+    max-height: 150px;
+}
+
+.add-review form .save{
+    color: #656565;
+}
+
+.add-review form button{
+    background-color: #FF6000;
+    color: white;
+    transition: .3s;
+    padding: 10px 38px;
+    font-weight: 500;
+}
+
+.add-review form button:hover{
+    background-color: #22252A;
+    color: white;
 }

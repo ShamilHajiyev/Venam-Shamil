@@ -8,11 +8,20 @@
     <title>Shop - Venam</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/searchbar.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="assets/css/filter-price.css">
+    <link rel="stylesheet" href="assets/css/star-rating.css">
     <link rel="icon" href="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cropped-favicon-32x32.png"
         sizes="32x32">
 </head>
@@ -513,7 +522,765 @@
     </header>
 
     <main class="bg-light">
+        <div class="shop-header d-flex justify-content-center align-items-center flex-column py-5">
+            <h1 class="py-3">SHOP</h1>
+            <div class="category-selection bg-light d-flex justify-content-between py-3 px-5 my-3">
+                <div class="category-selection-item active-category-selection-item"><a href="index.html">Home </a></div>
+                <span> ⚫ </span>
+                <div class="category-selection-item category-selection-item-2"> Shop</div>
+            </div>
+        </div>
 
+        <div class="container-lg container-fluid">
+            <div class="row my-5 py-5 justify-content-between">
+                <div class="shop-filter col-2">
+                    <div class="categories">
+                        <h4>Product Categories</h4>
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Accessories">
+                            <label class="form-check-label m-0 p-0" for="Accessories">
+                                Accessories
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Best-Seller">
+                            <label class="form-check-label m-0 p-0" for="Best-Seller">
+                                Best Seller
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Camera">
+                            <label class="form-check-label m-0 p-0" for="Camera">
+                                Camera
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Computer">
+                            <label class="form-check-label m-0 p-0" for="Computer">
+                                Computer
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Featured">
+                            <label class="form-check-label m-0 p-0" for="Featured">
+                                Featured
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Gaming">
+                            <label class="form-check-label m-0 p-0" for="Gaming">
+                                Gaming
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Headphones">
+                            <label class="form-check-label m-0 p-0" for="Headphones">
+                                Headphones
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Hot-Sell">
+                            <label class="form-check-label m-0 p-0" for="Hot Sell">
+                                Hot Sell
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Mobile-Tablet">
+                            <label class="form-check-label m-0 p-0" for="Mobile-Tablet">
+                                Mobile & Tablet
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="Trend">
+                            <label class="form-check-label m-0 p-0" for="Trend">
+                                Trend
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="TV-Smart">
+                            <label class="form-check-label m-0 p-0" for="TV-Smart">
+                                TV & Smart Box
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="status py-4">
+                        <h4>Product Status</h4>
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="stock">
+                            <label class="form-check-label m-0 p-0" for="stock">
+                                In Stock
+                            </label>
+                        </div>
+
+                        <div class="form-check py-2 d-flex align-items-center">
+                            <input class="form-check-input" type="checkbox" id="sale">
+                            <label class="form-check-label m-0 p-0" for="sale">
+                                On Sale
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="colors py-4">
+                        <h4>Colors</h4>
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">Black</span>
+                            <span class="color-count">5</span>
+                        </div>
+
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">Blue</span>
+                            <span class="color-count">4</span>
+                        </div>
+
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">Pink</span>
+                            <span class="color-count">2</span>
+                        </div>
+
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">Yellow</span>
+                            <span class="color-count">6</span>
+                        </div>
+                    </div>
+
+                    <div class="sizes colors py-4">
+                        <h4>Sizes</h4>
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">L</span>
+                            <span class="color-count">5</span>
+                        </div>
+
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">M</span>
+                            <span class="color-count">4</span>
+                        </div>
+
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">S</span>
+                            <span class="color-count">2</span>
+                        </div>
+
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">XL</span>
+                            <span class="color-count">6</span>
+                        </div>
+
+                        <div class="py-2 d-flex align-items-center justify-content-between">
+                            <span class="color">XS</span>
+                            <span class="color-count">6</span>
+                        </div>
+                    </div>
+
+                    <div class="price">
+                        <h4>Filter By Price</h4>
+                        <div class="wrapper">
+                            <fieldset class="filter-price">
+                                <div class="price-field">
+                                    <input type="range" min="20" max="700" value="20" id="lower">
+                                    <input type="range" min="20" max="700" value="700" id="upper">
+                                </div>
+                                <div class="price-wrap">
+                                    <span class="price-span">PRICE: </span>
+                                    <div class="price-wrap-1">
+                                        <input id="one">
+                                        <label for="one">$</label>
+                                    </div>
+                                    <div class="price-wrap_line">-</div>
+                                    <div class="price-wrap-2">
+                                        <input id="two">
+                                        <label for="two">$</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <span class="price-title btn my-2">FILTER</span>
+                        </div>
+                    </div>
+
+                    <div class="average-rating py-4">
+                        <h4>Average Rating</h4>
+
+                        <div class="star-rating w-50">
+                            <div class="feedback">
+                                <div class="rating">
+                                    <span class="my-2">(4)</span>
+                                    <input type="radio" name="rating-average-4" id="rating-5-average-4" disabled>
+                                    <label for="rating-5-average-4"></label>
+                                    <input type="radio" name="rating-average-4" id="rating-4-average-4" checked
+                                        disabled>
+                                    <label for="rating-4-average-4"></label>
+                                    <input type="radio" name="rating-average-4" id="rating-3-average-4" disabled>
+                                    <label for="rating-3-average-4"></label>
+                                    <input type="radio" name="rating-average-4" id="rating-2-average-4" disabled>
+                                    <label for="rating-2-average-4"></label>
+                                    <input type="radio" name="rating-average-4" id="rating-1-average-4" disabled>
+                                    <label for="rating-1-average-4"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="star-rating w-50">
+                            <div class="feedback">
+                                <div class="rating">
+                                    <span class="my-2">(1)</span>
+                                    <input type="radio" name="rating-average-1" id="rating-5-average-1" disabled>
+                                    <label for="rating-average-1"></label>
+                                    <input type="radio" name="rating-average-1" id="rating-4-average-1" disabled>
+                                    <label for="rating-average-1"></label>
+                                    <input type="radio" name="rating-average-1" id="rating-3-average-1" disabled>
+                                    <label for="rating-average-1"></label>
+                                    <input type="radio" name="rating-average-1" id="rating-2-average-1" disabled>
+                                    <label for="rating-average-1"></label>
+                                    <input type="radio" name="rating-average-1" id="rating-1-average-1" checked
+                                        disabled>
+                                    <label for="rating-average-1"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-products d-flex align-items-center">
+                        <input class="border py-3 px-2" type="text" placeholder="Search products">
+                        <div class="icon-container py-3">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="product-tags py-4">
+                        <h4 class="py-2">Product Tags</h4>
+                        <div class="tags d-flex flex-wrap">
+                            <span class="btn mx-1 my-1">Audio</span>
+                            <span class="btn mx-1 my-1">Drone</span>
+                            <span class="btn mx-1 my-1">External</span>
+                            <span class="btn mx-1 px-1 my-1">Group</span>
+                            <span class="btn mx-1 px-1 my-1">Mobile</span>
+                            <span class="btn mx-1 px-1 my-1">Nine</span>
+                            <span class="btn mx-1 my-1">Oppo</span>
+                            <span class="btn mx-1 my-1">Phone</span>
+                            <span class="btn mx-1 my-1">Product</span>
+                            <span class="btn mx-1 my-1">Simple</span>
+                            <span class="btn mx-1 my-1">Special Offer</span>
+                            <span class="btn mx-1 my-1">Tv</span>
+                            <span class="btn mx-1 my-1">Variable</span>
+                            <span class="btn mx-1 my-1">Video</span>
+                            <span class="btn mx-1 my-1">Watch</span>
+                            <span class="btn mx-1 my-1">Wifi</span>
+                        </div>
+                    </div>
+
+                    <div class="on-sale-products">
+                        <h4>On Sale Products</h4>
+                    </div>
+
+                    <div class="recently-viewed py-4">
+                        <h4>Recently Viewed Products</h4>
+                    </div>
+                </div>
+
+                <div class="shop-main col-9">
+                    <div class="container">
+                        <div class="modern-technology-product row my-3 p-5">
+                            <div class="col-6">
+                                <h5 class="py-2">BUILD WITH ELEMENTOR</h5>
+                                <h1>Modern Technology Products</h1>
+                                <p class="py-3">We’ve gathered all of the features that you might need in order to make
+                                    your store
+                                    online in this theme.</p>
+                                <a class="btn" href="shop.html">SHOP NOW <i
+                                        class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                            <div class="col-6"> 
+                            </div>
+                        </div>
+
+                        <div class="all-categories py-3 px-5 my-5 border">
+                            <h4 class="py-3">All Categories</h4>
+                            <div class="all-category-slider row">
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+
+                                <div class="card col-1 mx-3 border-0">
+                                    <div class="img-container">
+                                        <img class="w-100"
+                                            src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/cat_img6.png"
+                                            alt="">
+                                    </div>
+                                    <h5 class="py-3">Camera</h5>
+                                    <span class="card-count d-inline-flex justify-content-center align-items-center">
+                                        7
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured py-5">
+                            <div class="container-fluid container-lg">
+                                <div class="row">
+                                    <div
+                                        class="header col-4 border-bottom d-flex justify-content-between py-2 my-3 align-items-center">
+                                        <p>Featured Products</p>
+                                        <a href="shop.html">View All</a>
+                                    </div>
+                                    <div
+                                        class="header col-4 border-bottom d-flex justify-content-between py-2 my-3 align-items-center">
+                                        <p>Top Rated Products</p>
+                                        <a href="shop.html">View All</a>
+                                    </div>
+                                    <div
+                                        class="header col-4 border-bottom d-flex justify-content-between py-2 my-3 align-items-center">
+                                        <p>On Sale Products</p>
+                                        <a href="shop.html">View All</a>
+                                    </div>
+
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-a" id="rating-5-a">
+                                                            <label for="rating-5-a"></label>
+                                                            <input type="radio" name="rating-a" id="rating-4-a">
+                                                            <label for="rating-4-a"></label>
+                                                            <input type="radio" name="rating-a" id="rating-3-a">
+                                                            <label for="rating-3-a"></label>
+                                                            <input type="radio" name="rating-a" id="rating-2-a">
+                                                            <label for="rating-2-a"></label>
+                                                            <input type="radio" name="rating-a" id="rating-1-a">
+                                                            <label for="rating-1-a"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-b" id="rating-5-b">
+                                                            <label for="rating-5-b"></label>
+                                                            <input type="radio" name="rating-b" id="rating-4-b">
+                                                            <label for="rating-4-b"></label>
+                                                            <input type="radio" name="rating-b" id="rating-3-b">
+                                                            <label for="rating-3-b"></label>
+                                                            <input type="radio" name="rating-b" id="rating-2-b">
+                                                            <label for="rating-2-b"></label>
+                                                            <input type="radio" name="rating-b" id="rating-1-b">
+                                                            <label for="rating-1-b"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-c" id="rating-5-c">
+                                                            <label for="rating-5-c"></label>
+                                                            <input type="radio" name="rating-c" id="rating-4-c">
+                                                            <label for="rating-4-c"></label>
+                                                            <input type="radio" name="rating-c" id="rating-3-c">
+                                                            <label for="rating-3-c"></label>
+                                                            <input type="radio" name="rating-c" id="rating-2-c">
+                                                            <label for="rating-2-c"></label>
+                                                            <input type="radio" name="rating-c" id="rating-1-c">
+                                                            <label for="rating-1-c"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-d" id="rating-5-d">
+                                                            <label for="rating-5-d"></label>
+                                                            <input type="radio" name="rating-d" id="rating-4-d">
+                                                            <label for="rating-4-d"></label>
+                                                            <input type="radio" name="rating-d" id="rating-3-d">
+                                                            <label for="rating-3-d"></label>
+                                                            <input type="radio" name="rating-d" id="rating-2-d">
+                                                            <label for="rating-2-d"></label>
+                                                            <input type="radio" name="rating-d" id="rating-1-d">
+                                                            <label for="rating-1-d"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-e" id="rating-5-e">
+                                                            <label for="rating-5-e"></label>
+                                                            <input type="radio" name="rating-e" id="rating-4-e">
+                                                            <label for="rating-4-e"></label>
+                                                            <input type="radio" name="rating-e" id="rating-3-e">
+                                                            <label for="rating-3-e"></label>
+                                                            <input type="radio" name="rating-e" id="rating-2-e">
+                                                            <label for="rating-2-e"></label>
+                                                            <input type="radio" name="rating-e" id="rating-1-e">
+                                                            <label for="rating-1-e"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-f" id="rating-5-f">
+                                                            <label for="rating-5-f"></label>
+                                                            <input type="radio" name="rating-f" id="rating-4-f">
+                                                            <label for="rating-4-f"></label>
+                                                            <input type="radio" name="rating-f" id="rating-3-f">
+                                                            <label for="rating-3-f"></label>
+                                                            <input type="radio" name="rating-f" id="rating-2-f">
+                                                            <label for="rating-2-f"></label>
+                                                            <input type="radio" name="rating-f" id="rating-1-f">
+                                                            <label for="rating-1-f"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-g" id="rating-5-g">
+                                                            <label for="rating-5-g"></label>
+                                                            <input type="radio" name="rating-g" id="rating-4-g">
+                                                            <label for="rating-4-g"></label>
+                                                            <input type="radio" name="rating-g" id="rating-3-g">
+                                                            <label for="rating-3-g"></label>
+                                                            <input type="radio" name="rating-g" id="rating-2-g">
+                                                            <label for="rating-2-g"></label>
+                                                            <input type="radio" name="rating-g" id="rating-1-g">
+                                                            <label for="rating-1-g"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-h" id="rating-5-h">
+                                                            <label for="rating-5-h"></label>
+                                                            <input type="radio" name="rating-h" id="rating-4-h">
+                                                            <label for="rating-4-h"></label>
+                                                            <input type="radio" name="rating-h" id="rating-3-h">
+                                                            <label for="rating-3-h"></label>
+                                                            <input type="radio" name="rating-h" id="rating-2-h">
+                                                            <label for="rating-2-h"></label>
+                                                            <input type="radio" name="rating-h" id="rating-1-h">
+                                                            <label for="rating-1-h"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 my-3">
+                                        <div class="card border mx-1 d-flex flex-row align-items-center">
+                                            <div class="img-container w-50">
+                                                <a href="product.html">
+                                                    <img class="card-img-top"
+                                                        src="https://ninetheme.com/themes/venam/v1/wp-content/uploads/2021/05/1d20de71-9151-425f-890b-2fd4c703c430.dfbaf58eff390bef1eec9774e2e32233-600x600.jpg"
+                                                        alt="Card image cap">
+                                                </a>
+                                            </div>
+                                            <div class="card-body w-50">
+                                                <h5 class="card-title"><a href="product.html">Apple 256GB</a></h5>
+                                                <p class="card-text">US $240.00</p>
+                                                <div class="star-rating">
+                                                    <div class="feedback">
+                                                        <div class="rating">
+                                                            <input type="radio" name="rating-h" id="rating-5-h">
+                                                            <label for="rating-5-h"></label>
+                                                            <input type="radio" name="rating-h" id="rating-4-h">
+                                                            <label for="rating-4-h"></label>
+                                                            <input type="radio" name="rating-h" id="rating-3-h">
+                                                            <label for="rating-3-h"></label>
+                                                            <input type="radio" name="rating-h" id="rating-2-h">
+                                                            <label for="rating-2-h"></label>
+                                                            <input type="radio" name="rating-h" id="rating-1-h">
+                                                            <label for="rating-1-h"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modern-technology-product modern-technology-product-2 border row my-3 p-5">
+                            <div class="col-6">
+                                <h5 class="py-2">BUILD WITH ELEMENTOR</h5>
+                                <h1>Modern Technology Products</h1>
+                                <p class="py-3">We’ve gathered all of the features that you might need in order to make
+                                    your store
+                                    online in this theme.</p>
+                                <a class="btn" href="">VIDEO POP UP <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                            <div class="col-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advantages row text-center py-5 my-3">
+                <div class="advantage col-3 border-end">
+                    <i class="fa-solid fa-truck py-3"></i>
+                    <h5>Free Shipping On Over $ 50</h5>
+                    <p>Agricultural mean crops livestock</p>
+                </div>
+                <div class="advantage col-3 border-end">
+                    <i class="fa-solid fa-percent py-3"></i>
+                    <h5>Membership Discount</h5>
+                    <p>Only MemberAgricultural livestock</p>
+                </div>
+                <div class="advantage col-3 border-end">
+                    <i class="fa-solid fa-sack-dollar py-3"></i>
+                    <h5>Money Return</h5>
+                    <p>30 days money back guarantee</p>
+                </div>
+                <div class="advantage col-3">
+                    <i class="fa-solid fa-headset py-3"></i>
+                    <h5>Online Support</h5>
+                    <p>24/7 days support guarantee</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -712,12 +1479,17 @@
         <i class="fa-solid fa-chevron-up"></i>
     </div>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/selectionbar.js"></script>
+    <script src="assets/js/filter-price.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>

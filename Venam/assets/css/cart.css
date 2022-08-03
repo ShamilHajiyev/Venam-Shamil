@@ -1,0 +1,35 @@
+.cart-main .table-empty{
+    color: #656565;
+    border-top: 3px solid #FF6000;
+}
+
+.cart-main .table-empty i{
+    color: #FF6000;
+    padding-right: 5px;
+}
+
+.return a {
+    font-size: 14px;
+    padding: 10px 30px;
+    background-color: #FF6000;
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.return a:hover{
+    background-color: #22252A;
+    color: white;
+}
+
+.items-purchased>h2{
+    font-size: 23px;
+}
+
+.items-purchased .categories span{
+    color: #8e8d8d;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 12px;
+    cursor: pointer;
+}
